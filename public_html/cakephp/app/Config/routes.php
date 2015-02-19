@@ -40,6 +40,12 @@
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 /**
+ *..Enter Page Routes Here (LP) Last Edited 2/17/15 Like below for any page
+ */
+	
+	Router::connect('/index', array('controller' => 'pages', 'action' => 'display', 'index'));
+
+/**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.
  */
