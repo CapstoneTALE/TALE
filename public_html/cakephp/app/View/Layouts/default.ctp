@@ -18,7 +18,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 
-<!--
+<!-- Original CakePhp Default Layout -->
+<!-- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,9 +64,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>
--->
+ -->
+ 
+ 
 
-
+<!-- Bootstrap Default Cakephp Layout -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -93,6 +96,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     echo $this->Html->css('bootstrap-responsive');
     echo $this->Html->css('docs');
     echo $this->Html->css('prettify');
+    echo $this->Html->css('bootstrap.min');
+    echo $this->Html->css('font-awesome.min');
+    echo $this->Html->css('animate.min');
+    echo $this->Html->css('prettyPhoto');
+    echo $this->Html->css('main');
+    echo $this->Html->css('responsive');
   ?>
   <!-- icons -->
   <?php
@@ -108,9 +117,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <?php echo $scripts_for_layout; ?>
 </head>
 
+<!-- 
 <body data-spy="scroll" data-target=".subnav" data-offset="50">
   <div id="container">
-  <!-- Navbar ============================================= -->
+  <!~~ Navbar ============================================= ~~>
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
@@ -157,4 +167,5 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
   </div>
   <?php echo $this->element('sql_dump'); ?>
 </body>
+ -->
 </html>
