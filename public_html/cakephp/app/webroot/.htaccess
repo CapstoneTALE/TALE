@@ -1,8 +1,12 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
+<<<<<<< HEAD
    	#RewriteBase /~cs4970f14grp1/cakephp
 	RewriteBase /GitHub/public_html/cakephp
 
+=======
+   	RewriteBase /~cs4970f14grp1/cakephp
+>>>>>>> origin/Lorenzo_Parks_Branch
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]

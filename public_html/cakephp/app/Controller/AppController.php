@@ -31,6 +31,7 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 class AppController extends Controller {
     public $helpers = array('Form', 'Html', 'Session');
@@ -60,6 +61,8 @@ class AppController extends Controller {
 /*Undo this section only
 =======
 >>>>>>> master
+=======
+>>>>>>> origin/Lorenzo_Parks_Branch
 class AppController extends Controller {
 	public $components = array('DebugKit.Toolbar');//AD added DebugKit **KEEP** 1/30
 
@@ -70,11 +73,15 @@ class AppController extends Controller {
 		'Paginator' => array('className' => 'BoostCake.BoostCakePaginator'),
 	);
 <<<<<<< HEAD
+<<<<<<< HEAD
 */
 
 =======
 	
 >>>>>>> master
+=======
+	
+>>>>>>> origin/Lorenzo_Parks_Branch
 	/*public $components = array(
 		'Auth' => array(
 			'flash' => array(
