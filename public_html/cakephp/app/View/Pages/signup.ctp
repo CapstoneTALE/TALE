@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>About Us | Political Visions</title>
+    <title>Login | Political Visions</title>
 	
 	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -80,7 +80,7 @@
     						)
 						);?>
                         </li>
-                        <li class="active"><!--<a href="about-us.html">About Us</a>-->
+                        <li><!--<a href="about-us.html">About Us</a>-->
                          <?php echo $this->Html->link(
     						'About Us',
     						'/about',
@@ -141,7 +141,7 @@
     						)
 						);?>
                         </li>
-                        <li>
+                        <li class="active">
                         <?php echo $this->Html->link(
     						'Login',
     						'/login',
@@ -160,230 +160,87 @@
 
     <section id="about-us">
         <div class="container">
-			<div class="center wow fadeInDown">
-				<h2>About Political Visions</h2>
-				<p class="lead">	With only 37% of eligible voters voting and 67% of those voters being over the age of 40 voting has in effect been abandoned by young people. This is concerning for a plethora of reasons most daunting of all being that the opinions and desires of a vast majority of the people occupying America and the provinces, towns, and cities that constitute it. This disconnect is becoming alarmingly apparent in the way that current political events are reported and handled and the public’s general contempt for the actions of the government has taken. Therefore there must be some system built to encourage and enlighten general voters on why their votes are important and what and who they are voting for.
-This is the application that TALE intends to create. An application to not only enlighten each community that it is introduced to as to who their politicians are and what they say they represent, but also the past actions of those politicians and how they have voted in the past and what those votes mean as far as their true political desires.</p>
+			<div class="container">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+		<form role="form">
+			<h2>Please Sign Up <small>It's free and always will be.</small></h2>
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+                        <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Display Name" tabindex="3">
+			</div>
+			<div class="form-group">
+				<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-sm-3 col-md-3">
+					<span class="button-checkbox">
+						<button type="button" class="btn" data-color="info" tabindex="7">I Agree</button>
+                        <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
+					</span>
+				</div>
+				<div class="col-xs-8 col-sm-9 col-md-9">
+					 By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site, including our Cookie Use.
+				</div>
 			</div>
 			
-			<!-- about us slider -->
-			<div id="about-slider">
-				<div id="carousel-slider" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-				  	<ol class="carousel-indicators visible-xs">
-					    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-slider" data-slide-to="1"></li>
-					    <li data-target="#carousel-slider" data-slide-to="2"></li>
-				  	</ol>
-
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="<?php echo $this->webroot; ?>/app/webroot/img/slider/VoteAndBeAPartOfHistory.jpg" class="img-responsive" alt=""> 
-					   </div>
-					   <div class="item">
-							<img src="images/slider_one.jpg" class="img-responsive" alt=""> 
-					   </div> 
-					   <div class="item">
-							<img src="images/slider_one.jpg" class="img-responsive" alt=""> 
-					   </div> 
-					</div>
-					
-					<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
-						<i class="fa fa-angle-left"></i> 
-					</a>
-					
-					<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
-						<i class="fa fa-angle-right"></i> 
-					</a>
-				</div> <!--/#carousel-slider-->
-			</div><!--/#about-slider-->
-			
-			
-			<!-- Our Skill -->
-			<!--<div class="skill-wrap clearfix">
-			
-				<div class="center wow fadeInDown">
-					<h2>Our Skill</h2>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-				</div>
-				
-				<div class="row">
-		
-					<div class="col-sm-3">
-						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-							<div class="joomla-skill">                                   
-								<p><em>85%</em></p>
-								<p>Joomla</p>
-							</div>
-						</div>
-					</div>
-					
-					 <div class="col-sm-3">
-						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-							<div class="html-skill">                                  
-								<p><em>95%</em></p>
-								<p>HTML</p>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-sm-3">
-						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-							<div class="css-skill">                                    
-								<p><em>80%</em></p>
-								<p>CSS</p>
-							</div>
-						</div>
-					</div>
-					
-					 <div class="col-sm-3">
-						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
-							<div class="wp-skill">
-								<p><em>90%</em></p>
-								<p>Wordpress</p>                                     
-							</div>
-						</div>
-					</div>
-					
-				</div>
-	
-            </div>--><!--/.our-skill-->
-			
-
-			<!-- our-team -->
-			<div class="team">
-				<div class="center wow fadeInDown">
-					<h2> <br> <br>Team of Political Visions</h2>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-				</div>
-
-				<div class="row clearfix">
-					<div class="col-md-4 col-sm-6">	
-						<div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-							<div class="media">
-								<div class="pull-left">
-									<a href="#"><img class="media-object" src="<?php echo $this->webroot; ?>/app/webroot/img/Lorenzo.jpg" alt=""></a>
-								</div>
-								<div class="media-body">
-									<h4>Lorenzo Parks</h4>
-									<h5>Founder and CEO</h5>
-									<ul class="tag clearfix">
-										<li class="btn"><a href="#">Web</a></li>
-										<li class="btn"><a href="#">Ui</a></li>
-										<li class="btn"><a href="#">Ux</a></li>
-										<li class="btn"><a href="#">Photoshop</a></li>
-									</ul>
-									
-									<ul class="social_icons">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								</div>
-							</div><!--/.media -->
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-						</div>
-					</div><!--/.col-lg-4 -->
-					
-					
-					<div class="col-md-4 col-sm-6 col-md-offset-2">	
-						<div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-							<div class="media">
-								<div class="pull-left">
-									<a href="#"><img class="media-object" src="<?php echo $this->webroot; ?>/app/webroot/img/Aaron.jpg" alt=""></a>
-								</div>
-								<div class="media-body">
-									<h4>Aaron Duncan</h4>
-									<h5>Founder and CEO</h5>
-									<ul class="tag clearfix">
-										<li class="btn"><a href="#">Web</a></li>
-										<li class="btn"><a href="#">Ui</a></li>
-										<li class="btn"><a href="#">Ux</a></li>
-										<li class="btn"><a href="#">Photoshop</a></li>
-									</ul>
-									<ul class="social_icons">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								</div>
-							</div><!--/.media -->
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-						</div>
-					</div><!--/.col-lg-4 -->					
-				</div> <!--/.row -->
-				<div class="row team-bar">
-					<div class="first-one-arrow hidden-xs">
-						<hr>
-					</div>
-					<div class="first-arrow hidden-xs">
-						<hr> <i class="fa fa-angle-up"></i>
-					</div>
-					<div class="second-arrow hidden-xs">
-						<hr> <i class="fa fa-angle-down"></i>
-					</div>
-					<div class="third-arrow hidden-xs">
-						<hr> <i class="fa fa-angle-up"></i>
-					</div>
-					<div class="fourth-arrow hidden-xs">
-						<hr> <i class="fa fa-angle-down"></i>
-					</div>
-				</div> <!--skill_border-->       
-
-				<div class="row clearfix">   
-					<div class="col-md-4 col-sm-6 col-md-offset-2">	
-						<div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-							<div class="media">
-								<div class="pull-left">
-									<a href="#"><img class="media-object" src="<?php echo $this->webroot; ?>/app/webroot/img/Evans.jpg" alt=""></a>
-								</div>
-
-								<div class="media-body">
-									<h4>Evans Thornton</h4>
-									<h5>Founder and CEO</h5>
-									<ul class="tag clearfix">
-										<li class="btn"><a href="#">Web</a></li>
-										<li class="btn"><a href="#">Ui</a></li>
-										<li class="btn"><a href="#">Ux</a></li>
-										<li class="btn"><a href="#">Photoshop</a></li>
-									</ul>
-									<ul class="social_icons">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								</div>
-							</div><!--/.media -->
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-md-offset-2">
-						<div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-							<div class="media">
-								<div class="pull-left">
-									<a href="#"><img class="media-object" src="images/man4.jpg" alt=""></a>
-								</div>
-								<div class="media-body">
-									<h4>Tyron Allen</h4>
-									<h5>Founder and CEO</h5>
-									<ul class="tag clearfix">
-										<li class="btn"><a href="#">Web</a></li>
-										<li class="btn"><a href="#">Ui</a></li>
-										<li class="btn"><a href="#">Ux</a></li>
-										<li class="btn"><a href="#">Photoshop</a></li>
-									</ul>
-									<ul class="social_icons">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								</div>
-							</div><!--/.media -->
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-						</div>
-					</div>
-				</div>	<!--/.row-->
-			</div><!--section-->
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+				<div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Sign In</a></div>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+			</div>
+			<div class="modal-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente consequuntur natus odio reiciendis perferendis rem nisi tempore possimus ipsa porro delectus quidem dolorem ad.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>	
 		</div><!--/.container-->
     </section><!--/about-us-->
 	
@@ -481,10 +338,77 @@ This is the application that TALE intends to create. An application to not only 
     <script type="text/javascript">
         $('.carousel').carousel()
     </script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/bootstrap.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+    	$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'glyphicon glyphicon-check'
+                },
+                off: {
+                    icon: 'glyphicon glyphicon-unchecked'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                    .removeClass('btn-default')
+                    .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                    .removeClass('btn-' + color + ' active')
+                    .addClass('btn-default');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i>');
+            }
+        }
+        init();
+    });
+});
+    </script>
 </body>
 </html>
