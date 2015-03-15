@@ -44,6 +44,7 @@
  */
 	
 	Router::connect('/index', array('controller' => 'pages', 'action' => 'display', 'index'));
+
 	Router::connect('/about', array('controller' => 'pages', 'action' => 'display', 'about'));
 	Router::connect('/contact', array('controller' => 'pages', 'action' => 'display', 'contact'));
 	Router::connect('/calendar', array('controller' => 'pages', 'action' => 'display', 'calendar'));
