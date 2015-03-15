@@ -38,3 +38,5 @@ sftp-config.json
 ### NotepadPP ###
 # Notepad++ backups #
 *.bak
+
+.htaccess
