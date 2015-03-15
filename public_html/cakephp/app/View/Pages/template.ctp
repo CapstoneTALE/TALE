@@ -160,14 +160,15 @@
 		
     </header><!--/header-->
 
-    <section id="about-us">
+<!--Start Here for Page Creations-->
+    <section>
         <div class="container">
 			<div class="center wow fadeInDown">
-				<h2>Bills</h2>
+				<h2>Example Text Header</h2>
 			</div>
-			
 		</div><!--/.container-->
-    </section><!--/about-us-->
+    </section>
+<!--End Here for Page Creations-->
 	
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
