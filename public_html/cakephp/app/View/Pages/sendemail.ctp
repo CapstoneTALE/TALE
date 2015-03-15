@@ -102,7 +102,7 @@
     						)
 						);?>
                         </li>
-                        <li class="active"><!--<a href="bills.ctp">Bills</a>-->
+                        <li><!--<a href="bills.ctp">Bills</a>-->
                          <?php echo $this->Html->link(
     						'Bills',
     						'/bills',
@@ -133,7 +133,7 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li><!--<a href="contact-us.html">Contact</a>-->
+                        <li class="active"><!--<a href="contact-us.html">Contact</a>-->
                          <?php echo $this->Html->link(
     						'Contact Us',
     						'/contact',
