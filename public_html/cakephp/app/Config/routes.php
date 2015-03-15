@@ -44,11 +44,9 @@
  */
 	
 	Router::connect('/index', array('controller' => 'pages', 'action' => 'display', 'index'));
-<<<<<<< HEAD
-=======
+
 	Router::connect('/about', array('controller' => 'pages', 'action' => 'display', 'about'));
 	Router::connect('/contact', array('controller' => 'pages', 'action' => 'display', 'contact'));
->>>>>>> origin/Lorenzo_Parks_Branch
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on

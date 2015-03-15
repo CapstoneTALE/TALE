@@ -1,7 +1,6 @@
 <IfModule mod_rewrite.c>
    RewriteEngine on
 <<<<<<< HEAD
-<<<<<<< HEAD
    #RewriteBase /~cs4970f14grp1/cakephp
 	RewriteBase /GitHub/public_html/cakephp
 

@@ -1,19 +1,9 @@
 <IfModule mod_rewrite.c>
-<<<<<<< HEAD
    RewriteEngine on
-<<<<<<< HEAD
+
    #RewriteBase /~cs4970f14grp1/cakephp
 	RewriteBase /GitHub/public_html/cakephp
 
-=======
-   RewriteBase /~cs4970f14grp1/cakephp
->>>>>>> master
-   RewriteRule    ^$ app/webroot/    [L]
-   RewriteRule    (.*) app/webroot/$1 [L]
-=======
-    RewriteEngine on
-	RewriteBase /~cs4970f14grp1/cakephp
     RewriteRule    ^$    webroot/    [L]
     RewriteRule    (.*) webroot/$1    [L]
->>>>>>> origin/Lorenzo_Parks_Branch
 </IfModule>

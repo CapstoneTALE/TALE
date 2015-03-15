@@ -30,8 +30,7 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 class AppController extends Controller {
     public $helpers = array('Form', 'Html', 'Session');
@@ -43,56 +42,25 @@ class AppController extends Controller {
         /*'Auth' => array(
             'loginRedirect' => array('controller' => '/Users/', 'action' => 'index'),
             'logoutRedirect' => array('controller' => '/Users/', 'action' => 'login'),
-            'authError' => 'You are not allowed to see this page unless you are a registered user.'*/
-        
+            'authError' => 'You are not allowed to see this page unless you are a registered user.'
+        )*/
     );
 
     public function beforeFilter() {
         
-      
+        /*$user = $this->Auth->user();
+        if($user != null)
+        {
+            $this->Session->write('username', $user['username']);
+        }
+        
+        $user = $this->Auth->user();
+        if($user != null)
+        {
+            $this->Session->write('username', $user['username']);
+        } */     
 
  }
-
-
-
-
-
-
-/*Undo this section only
-=======
->>>>>>> master
-=======
->>>>>>> origin/Lorenzo_Parks_Branch
-class AppController extends Controller {
-	public $components = array('DebugKit.Toolbar');//AD added DebugKit **KEEP** 1/30
-
-	public $helpers = array(
-		'Session',
-		'Html' => array('className' => 'BoostCake.BoostCakeHtml'),
-		'Form' => array('className' => 'BoostCake.BoostCakeForm'),
-		'Paginator' => array('className' => 'BoostCake.BoostCakePaginator'),
-	);
-<<<<<<< HEAD
-<<<<<<< HEAD
-*/
-
-=======
-	
->>>>>>> master
-=======
-	
->>>>>>> origin/Lorenzo_Parks_Branch
-	/*public $components = array(
-		'Auth' => array(
-			'flash' => array(
-				'element' => 'alert',
-				'key' => 'auth',
-				'params' => array(
-					'plugin' => 'BoostCake',
-					'class' => 'alert-danger',
-				)
-			)
-		)
-	);*/
-
 }
+?>
+
