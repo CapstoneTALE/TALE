@@ -90,6 +90,36 @@
     						)
 						);?>
                         </li>
+                        <li><!--<a href="discussion.ctp">Discussion</a>-->
+                        <?php echo $this->Html->link(
+    						'Discussion',
+    						'/discussion',
+    						array(
+        						'controller' => 'pages',
+        						'action' => 'discussion',
+    						)
+						);?>
+                        </li>
+                        <li><!--<a href="bills.ctp">Bills</a>-->
+                         <?php echo $this->Html->link(
+    						'Bills',
+    						'/bills',
+    						array(
+        						'controller' => 'pages',
+        						'action' => 'bills',
+    						)
+						);?>
+						</li>
+                        <li><!--<a href="calendar.ctp">Calendar</a>-->
+                         <?php echo $this->Html->link(
+    						'Calendar',
+    						'/calendar',
+    						array(
+        						'controller' => 'pages',
+        						'action' => 'calendar',
+    						)
+						);?>
+						</li>
                         <!--<li><a href="services.html">Services</a></li>-->
                         <!--<li><a href="portfolio.html">Portfolio</a></li>-->
                         <!--<li class="dropdown">
@@ -101,7 +131,6 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <!--<li><a href="blog.html">Blog</a></li>--> 
                         <li class="active"><!--<a href="contact-us.html">Contact</a>-->
                          <?php echo $this->Html->link(
     						'Contact Us',
@@ -109,6 +138,16 @@
     						array(
         						'controller' => 'pages',
         						'action' => 'contact',
+    						)
+						);?>
+                        </li> 
+                        <li>
+                        <?php echo $this->Html->link(
+    						'Login',
+    						'/login',
+    						array(
+        						'controller' => 'pages',
+        						'action' => 'login',
     						)
 						);?>
                         </li>                      
