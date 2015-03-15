@@ -18,6 +18,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 
+<!--
+
 <!-- Original CakePhp Default Layout -->
 <!-- 
 <!DOCTYPE html>
@@ -50,21 +52,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
+			
 			<p>
-				<?php echo $cakeVersion; ?>
 			</p>
 		</div>
 	</div>
 	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>
- -->
+
+
+
  
  
 
@@ -101,7 +99,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     echo $this->Html->css('animate.min');
     echo $this->Html->css('prettyPhoto');
     echo $this->Html->css('main');
-    echo $this->Html->css('responsive');
+    //echo $this->Html->css('responsive');
   ?>
   <!-- icons -->
   <?php
@@ -117,10 +115,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <?php echo $scripts_for_layout; ?>
 </head>
 
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+  <div id="container">
+  <!-- Navbar ============================================= -->
 <!-- 
 <body data-spy="scroll" data-target=".subnav" data-offset="50">
   <div id="container">
   <!~~ Navbar ============================================= ~~>
+
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
@@ -162,10 +164,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
   </div>
   <div id="row">
     <?php echo $this->Session->flash(); ?>
-    <?php echo $content_for_layout; ?>
   </div>
   </div>
   <?php echo $this->element('sql_dump'); ?>
 </body>
- -->
+
 </html>
