@@ -40,3 +40,10 @@ sftp-config.json
 *.bak
 
 .htaccess
+
+public_html/cakephp/.htaccess
+
+public_html/cakephp/app/.htaccess
+
+public_html/cakephp/app/webroot/.htaccess
+
