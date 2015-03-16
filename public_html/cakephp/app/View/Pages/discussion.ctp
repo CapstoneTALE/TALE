@@ -133,16 +133,37 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li><!--<a href="contact-us.html">Contact</a>-->
-                         <?php echo $this->Html->link(
-    						'Contact Us',
-    						'/contact',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'contact',
-    						)
-						);?>
-                        </li>
+                        <li class="dropdown">
+                        	<?php echo $this->Html->link(
+                        		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
+    							'Contact',
+    							'#',
+   								array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
+							);
+                        	?>
+							<ul class="dropdown-menu">
+								<li><!--<a href="contact_us">Contact Us</a>-->
+								 <?php echo $this->Html->link(
+									'Contact Us',
+									'/contact_us',
+									array(
+										'controller' => 'pages',
+										'action' => 'contact_us',
+									)
+								);?>
+								</li>
+								<li><!--<a href="contact_politician">Contact Politicain</a>-->
+								 <?php echo $this->Html->link(
+									'Contact Politician',
+									'/contact_politician',
+									array(
+										'controller' => 'pages',
+										'action' => 'contact_politician',
+									)
+								);?>
+								</li>
+							</ul>
+						</li>	 
                         <li>
                         <?php echo $this->Html->link(
     						'Login',
@@ -173,7 +194,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-2 text-center">
                                 <div class="entry-meta">
-                                    <span id="publish_date">07  NOV</span>
+                                    <span id="publish_date">01  MAR</span>
                                     <span><i class="fa fa-user"></i> <a href="#">John Doe</a></span>
                                     <span><i class="fa fa-comment"></i> <a href="blog-item.html#comments">2 Comments</a></span>
                                     <span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span>
@@ -193,7 +214,7 @@
                         <div class="row">
                              <div class="col-sm-2 text-center">
                                 <div class="entry-meta"> 
-                                    <span id="publish_date">07  NOV</span>
+                                    <span id="publish_date">23  FEB</span>
                                     <span><i class="fa fa-user"></i> <a href="#">John Doe</a></span>
                                     <span><i class="fa fa-comment"></i> <a href="blog-item.html#comments">2 Comments</a></span>
                                     <span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span>

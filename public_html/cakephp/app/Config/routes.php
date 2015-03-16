@@ -46,7 +46,8 @@
 	Router::connect('/index', array('controller' => 'pages', 'action' => 'display', 'index'));
 
 	Router::connect('/about', array('controller' => 'pages', 'action' => 'display', 'about'));
-	Router::connect('/contact', array('controller' => 'pages', 'action' => 'display', 'contact'));
+	Router::connect('/contact_us', array('controller' => 'pages', 'action' => 'display', 'contact_us'));
+	Router::connect('/contact_politician', array('controller' => 'pages', 'action' => 'display', 'contact_politician'));
 	Router::connect('/calendar', array('controller' => 'pages', 'action' => 'display', 'calendar'));
 	Router::connect('/bills', array('controller' => 'pages', 'action' => 'display', 'bills'));
 	Router::connect('/discussion', array('controller' => 'pages', 'action' => 'display', 'discussion'));

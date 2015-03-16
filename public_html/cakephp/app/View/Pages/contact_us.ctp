@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Login | Political Visions</title>
-	
-	<!-- core CSS -->
+    <title>Contact Us | Political Visions</title>
+    
+    <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-	
+    
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -28,7 +28,7 @@
 
 <body>
 
-    <header id="header">
+	<header id="header">
         <div class="top-bar">
             <div class="container">
                 <div class="row">
@@ -131,7 +131,7 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li class="dropdown">
+                        <li class="active dropdown">
                         	<?php echo $this->Html->link(
                         		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
     							'Contact',
@@ -162,7 +162,7 @@
 								</li>
 							</ul>
 						</li>	 
-                        <li class="active">
+                        <li>
                         <?php echo $this->Html->link(
     						'Login',
     						'/login',
@@ -171,7 +171,7 @@
         						'action' => 'login',
     						)
 						);?>
-                        </li>                       
+                        </li>                      
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -179,50 +179,110 @@
 		
     </header><!--/header-->
 
-    <section id="about-us">
+    <section id="contact-info">
+        <div class="center">                
+            <h2>How to Reach Us?</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>
+        <div class="gmap-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 text-center">
+                        <div class="gmap">
+                            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=JoomShaper,+Dhaka,+Dhaka+Division,+Bangladesh&amp;aq=0&amp;oq=joomshaper&amp;sll=37.0625,-95.677068&amp;sspn=42.766543,80.332031&amp;ie=UTF8&amp;hq=JoomShaper,&amp;hnear=Dhaka,+Dhaka+Division,+Bangladesh&amp;ll=23.73854,90.385504&amp;spn=0.001515,0.002452&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=1073661719450182870&amp;output=embed"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7 map-content">
+                        <ul class="row">
+                            <li class="col-sm-6">
+                                <address>
+                                    <h5>Head Office</h5>
+                                    <p>1537 Flint Street <br>
+                                    Tumon, MP 96911</p>
+                                    <p>Phone:670-898-2847 <br>
+                                    Email Address:info@domain.com</p>
+                                </address>
+
+                                <address>
+                                    <h5>Zonal Office</h5>
+                                    <p>1537 Flint Street <br>
+                                    Tumon, MP 96911</p>                                
+                                    <p>Phone:670-898-2847 <br>
+                                    Email Address:info@domain.com</p>
+                                </address>
+                            </li>
+
+
+                            <li class="col-sm-6">
+                                <address>
+                                    <h5>Zone#2 Office</h5>
+                                    <p>1537 Flint Street <br>
+                                    Tumon, MP 96911</p>
+                                    <p>Phone:670-898-2847 <br>
+                                    Email Address:info@domain.com</p>
+                                </address>
+
+                                <address>
+                                    <h5>Zone#3 Office</h5>
+                                    <p>1537 Flint Street <br>
+                                    Tumon, MP 96911</p>
+                                    <p>Phone:670-898-2847 <br>
+                                    Email Address:info@domain.com</p>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  <!--/gmap_area -->
+
+    <section id="contact-page">
         <div class="container">
-			<div class="row" style="margin-top:20px">
-    			<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-					<form role="form">
-						<fieldset>
-							<h2>Please Sign In or 
-							<?php echo $this->Html->link(
-    						'Sign Up',
-    						'/signup',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'signup',
-    						)
-						);?>
-							</h2>
-							<hr class="colorgraph">
-							<div class="form-group">
-                    			<input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address">
-							</div>
-							<div class="form-group">
-                    			<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
-							</div>
-							<span class="button-checkbox">
-								<button type="button" class="btn" data-color="info">Remember Me</button>
-                   					<input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
-									<a href="" class="btn btn-link pull-right">Forgot Password?</a>
-							</span>
-							<hr class="colorgraph">
-							<div class="row">
-								<div class="col-xs-6 col-sm-6 col-md-6">
-                        			<input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
-								</div>
-								<div class="col-xs-6 col-sm-6 col-md-6">
-									<a href="" class="btn btn-lg btn-primary btn-block">Register</a>
-								</div>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-			</div>	
-		</div><!--/.container-->
-    </section><!--/about-us-->
-	
+            <div class="center">        
+                <h2>Drop Your Message</h2>
+                <p class="lead">Your input is greatly appreciated!</p>
+            </div> 
+            <div class="row contact-wrap"> 
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="name" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" class="form-control">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <input type="text" name="subject" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button>
+                        </div>
+                    </div>
+                </form> 
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#contact-page-->
+
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
@@ -311,73 +371,12 @@
             </div>
         </div>
     </footer><!--/#footer-->
-    
 
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript">
-    $(function(){
-    $('.button-checkbox').each(function(){
-		var $widget = $(this),
-			$button = $widget.find('button'),
-			$checkbox = $widget.find('input:checkbox'),
-			color = $button.data('color'),
-			settings = {
-					on: {
-						icon: 'glyphicon glyphicon-check'
-					},
-					off: {
-						icon: 'glyphicon glyphicon-unchecked'
-					}
-			};
-
-		$button.on('click', function () {
-			$checkbox.prop('checked', !$checkbox.is(':checked'));
-			$checkbox.triggerHandler('change');
-			updateDisplay();
-		});
-
-		$checkbox.on('change', function () {
-			updateDisplay();
-		});
-
-		function updateDisplay() {
-			var isChecked = $checkbox.is(':checked');
-			// Set the button's state
-			$button.data('state', (isChecked) ? "on" : "off");
-
-			// Set the button's icon
-			$button.find('.state-icon')
-				.removeClass()
-				.addClass('state-icon ' + settings[$button.data('state')].icon);
-
-			// Update the button's color
-			if (isChecked) {
-				$button
-					.removeClass('btn-default')
-					.addClass('btn-' + color + ' active');
-			}
-			else
-			{
-				$button
-					.removeClass('btn-' + color + ' active')
-					.addClass('btn-default');
-			}
-		}
-		function init() {
-			updateDisplay();
-			// Inject the icon if applicable
-			if ($button.find('.state-icon').length == 0) {
-				$button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
-			}
-		}
-		init();
-	});
-});
-    </script>
-    <script src="<?php echo $this->webroot; ?>/app/webroot/js/bootstrap.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/bootstrap.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.prettyPhoto.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.isotope.min.js"></script>
     <script src="<?php echo $this->webroot; ?>/app/webroot/js/main.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/wow.min.js"></script>
 </body>
 </html>
