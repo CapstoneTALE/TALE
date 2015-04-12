@@ -35,32 +35,58 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
     public $helpers = array('Form', 'Html', 'Session');
     public $components = array(
-        //'DebugKit.Toolbar',
-        
-        'Session',
-        
-        /*'Auth' => array(
-            'loginRedirect' => array('controller' => '/Users/', 'action' => 'index'),
-            'logoutRedirect' => array('controller' => '/Users/', 'action' => 'login'),
-            'authError' => 'You are not allowed to see this page unless you are a registered user.'
-        )*/
+        'DebugKit.Toolbar', 'Session', 'Acl',
+        'Auth' => array(
+            'loginRedirect' => array(
+                'controller' => 'users',
+                'action' => 'index'
+            ),
+            'logoutRedirect' => array(
+                'controller' => 'pages',
+                'action' => 'display',
+                'index'
+            ),
+            'authorize' => array(
+              'Actions' => array('actionPath' => 'controllers')
+            ) // Added this line
+          )
     );
+          /*'Auth' => array('authenticate' => array('Form' => array( 'userModel' => 'User',
+                                              'fields' => array(
+                                                                  'username' => 'username',
+                                                                  'password' => 'password'
+                                                                  )
+                                                          )
+                                      ),
+                              'authorize' => array('Controller'),
+                              'loginAction' => array('controller' => 'users', 'action' => 'index'),
+                              'loginRedirect' => array('controller' => 'users', 'action' => 'index'),
+                              'logoutRedirect' => array('controller' => 'users', 'action' => 'index'),
+                              'authError' => 'You must be logged in to view this page.',
+                              'loginError' => 'Invalid Username or Password entered, please try again.',
+                      ),
+                  );
+*/
+          // allow to view without logging in
+      public function beforeFilter() {
+          $this->Auth->allow('index', 'display', 'view');
+          $user = $this->Auth->user();
+          if($user != null)
+          {
+              $this->Session->write('username', $user['username']);
+          }
 
-    public function beforeFilter() {
-        
-        /*$user = $this->Auth->user();
-        if($user != null)
-        {
-            $this->Session->write('username', $user['username']);
         }
-        
-        $user = $this->Auth->user();
-        if($user != null)
-        {
-            $this->Session->write('username', $user['username']);
-        } */     
 
- }
+      public function isAuthorized($user) {
+          // Here is where we should verify the role and give access based on role
+          // Admin can access every action
+              if (isset($user['role']) && $user['role'] === '2') {
+                  return true;
+              }
+
+              // Default deny
+              return false;
+            }
 }
 ?>
-

@@ -1,16 +1,28 @@
 <?php
 class ArticlesController extends AppController {
 
-    public function latest() {
-        $this->findNewArticles();
+    public $components = array('Session');
+
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow('login', 'index', 'display', 'view', 'add');
     }
 
-    protected function findNewArticles() {
-        // Logic to find latest news articles
+    public function index() {
+        $data = $this->Article->find('all'));
+        $this->set('articles', $data);
     }
-  
-  	public function index() {
-        $this->set('articles', $this->Article->find('all'));
+
+    public function add() {
+        if ($this->request->is('article')) {
+            $this->Article->create();
+            if ($this->Article->save($this->request->data)) {
+                $this->Session->setFlash(__('Your article has been saved.'));
+                $this->redirect('index');
+            } else{
+            $this->Session->setFlash(__('Unable to add your article.'));
+            }
+        }
     }
 
     public function view($id) {
@@ -25,16 +37,17 @@ class ArticlesController extends AppController {
         $this->set('article', $article);
     }
 
-    public function add() {
-        if ($this->request->is('article')) {
-            $this->Article->create();
-            if ($this->Article->save($this->request->data)) {
-                $this->Session->setFlash(__('Your article has been saved.'));
-                return $this->redirect(array('action' => 'index'));
-            }
-            $this->Session->setFlash(__('Unable to add your article.'));
-        }
+    public function latest() {
+        $this->findNewArticles();
     }
+
+    protected function findNewArticles() {
+        // Logic to find latest news articles
+    }
+
+
+
+
 
     public function edit($id = null) {
     if (!$id) {

@@ -1,5 +1,9 @@
 <?php
 /**
+ * Static content controller.
+ *
+ * This file will render views from views/pages/
+ *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -9,28 +13,27 @@
  *
  * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  * @link          http://cakephp.org CakePHP(tm) Project
- * @since         CakePHP(tm) v 2.4.0
+ * @package       app.Controller
+ * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-App::uses('AbstractPasswordHasher', 'Controller/Component/Auth');
-App::uses('Security', 'Utility');
+App::uses('AppController', 'Controller');
 
 /**
- * Blowfish password hashing class.
+ * Static content controller
  *
- * @package       Cake.Controller.Component.Auth
+ * Override this controller by placing a copy in controllers directory of an application
+ *
+ * @package       app.Controller
+ * @link http://book.cakephp.org/2.0/en/controllers/pages-controller.html
  */
-class BlowfishPasswordHasher extends AppController{
+class LoginsController extends AppController {
 
-        public $components = array(
-            'Auth' => array(
-                'authenticate' => array(
-                    'Form' => array(
-                        'passwordHasher' => 'Blowfish'
-                        )
-                    )
-                )
-            );
+
+
+  public function beforeFilter() {
+      parent::beforeFilter();
+      $this->Auth->allow('login', 'add');
     }
-?>
+}

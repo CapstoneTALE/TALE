@@ -42,17 +42,23 @@
 /**
  *..Enter Page Routes Here (LP) Last Edited 2/17/15 Like below for any page
  */
-	
+
 	Router::connect('/index', array('controller' => 'pages', 'action' => 'display', 'index'));
 
-	Router::connect('/about', array('controller' => 'pages', 'action' => 'display', 'about'));
-	Router::connect('/contact', array('controller' => 'pages', 'action' => 'display', 'contact'));
-	Router::connect('/calendar', array('controller' => 'pages', 'action' => 'display', 'calendar'));
-	Router::connect('/bills', array('controller' => 'pages', 'action' => 'display', 'bills'));
-	Router::connect('/discussion', array('controller' => 'pages', 'action' => 'display', 'discussion'));
-	Router::connect('/login', array('controller' => 'pages', 'action' => 'display', 'login'));
-	Router::connect('/signup', array('controller' => 'pages', 'action' => 'display', 'signup'));
-	Router::connect('/sendemail', array('controller' => 'pages', 'action' => 'display', 'sendemail'));
+	//Router::connect('/about', array('controller' => 'pages', 'action' => 'display', 'about'));
+	//Router::connect('/contact', array('controller' => 'pages', 'action' => 'display', 'contact'));
+	//Router::connect('/calendar', array('controller' => 'pages', 'action' => 'display', 'calendar'));
+	//Router::connect('/bills', array('controller' => 'pages', 'action' => 'display', 'bills'));
+	//Router::connect('/discussion', array('controller' => 'pages', 'action' => 'display', 'discussion'));
+	//Router::connect('/login', array('controller' => 'pages', 'action' => 'display', 'login'));
+	//Router::connect('/signup', array('controller' => 'pages', 'action' => 'display', 'signup'));
+	//Router::connect('/sendemail', array('controller' => 'pages', 'action' => 'display', 'sendemail'));
+//	Router::connect('/index', array('controller' => 'users', 'action' => 'index'));
+	//Router::connect('/login', array('controller' => 'users', 'action' => 'login'));
+//	Router::connect('/logout', array('controller' => 'users', 'action' => 'logout'));
+//	Router::connect('/', array('controller' => 'users', 'action' => 'login'));
+	//Router::connect('/', array('controller' => 'posts', 'action' => 'index'));
+	//Router::connect('/login', array('controller' => 'users', 'action' => 'add'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
