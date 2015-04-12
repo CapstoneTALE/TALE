@@ -131,16 +131,37 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li><!--<a href="contact-us.html">Contact</a>-->
-                         <?php echo $this->Html->link(
-    						'Contact Us',
-    						'/contact',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'contact',
-    						)
-						);?>
-                        </li>
+                        <li class="dropdown">
+                        	<?php echo $this->Html->link(
+                        		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
+    							'Contact',
+    							'#',
+   								array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
+							);
+                        	?>
+							<ul class="dropdown-menu">
+								<li><!--<a href="contact_us">Contact Us</a>-->
+								 <?php echo $this->Html->link(
+									'Contact Us',
+									'/contact_us',
+									array(
+										'controller' => 'pages',
+										'action' => 'contact_us',
+									)
+								);?>
+								</li>
+								<li><!--<a href="contact_politician">Contact Politicain</a>-->
+								 <?php echo $this->Html->link(
+									'Contact Politician',
+									'/contact_politician',
+									array(
+										'controller' => 'pages',
+										'action' => 'contact_politician',
+									)
+								);?>
+								</li>
+							</ul>
+						</li>	 
                         <li>
                         <?php echo $this->Html->link(
     						'Login',

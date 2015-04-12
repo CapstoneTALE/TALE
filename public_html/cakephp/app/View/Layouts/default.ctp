@@ -118,11 +118,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body data-spy="scroll" data-target=".subnav" data-offset="50">
   <div id="container">
   <!-- Navbar ============================================= -->
-<!-- 
-<body data-spy="scroll" data-target=".subnav" data-offset="50">
-  <div id="container">
-  <!~~ Navbar ============================================= ~~>
-
+<!--
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
