@@ -182,6 +182,7 @@
     </header><!--/header-->
 
     <section id="blog" class="container">
+<!-- 
         <div class="center">
             <h2>Discussion</h2>
             <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
@@ -208,7 +209,7 @@
                                 <a class="btn btn-primary readmore" href="blog-item.html">Read More <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>    
-                    </div><!--/.blog-item-->
+                    </div><!~~/.blog-item~~>
                         
                     <div class="blog-item">
                         <div class="row">
@@ -227,7 +228,7 @@
                                 <a class="btn btn-primary readmore" href="blog-item.html">Read More <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>    
-                    </div><!--/.blog-item-->
+                    </div><!~~/.blog-item~~>
                         
                     <ul class="pagination pagination-lg">
                         <li><a href="#"><i class="fa fa-long-arrow-left"></i>Previous Page</a></li>
@@ -237,15 +238,15 @@
                         <li><a href="#">4</a></li>
                         <li><a href="#">5</a></li>
                         <li><a href="#">Next Page<i class="fa fa-long-arrow-right"></i></a></li>
-                    </ul><!--/.pagination-->
-                </div><!--/.col-md-8-->
+                    </ul><!~~/.pagination~~>
+                </div><!~~/.col-md-8~~>
 
                 <aside class="col-md-4">
                     <div class="widget search">
                         <form role="form">
                                 <input type="text" class="form-control search_box" autocomplete="off" placeholder="Search Here">
                         </form>
-                    </div><!--/.search-->
+                    </div><!~~/.search~~>
     				
     				<div class="widget categories">
                         <h3>Recent Comments</h3>
@@ -275,7 +276,7 @@
                                 
                             </div>
                         </div>                     
-                    </div><!--/.recent comments-->
+                    </div><!~~/.recent comments~~>
                      
 
                     <div class="widget categories">
@@ -290,7 +291,7 @@
                                 </ul>
                             </div>
                         </div>                     
-                    </div><!--/.categories-->
+                    </div><!~~/.categories~~>
     				
     				<div class="widget archieve">
                         <h3>Archieve</h3>
@@ -304,7 +305,7 @@
                                 </ul>
                             </div>
                         </div>                     
-                    </div><!--/.archieve-->
+                    </div><!~~/.archieve~~>
     				
                     <div class="widget tags">
                         <h3>Tag Cloud</h3>
@@ -320,7 +321,7 @@
                             <li><a class="btn btn-xs btn-primary" href="#">Porche</a></li>
                             <li><a class="btn btn-xs btn-primary" href="#">Gadgets</a></li>
                         </ul>
-                    </div><!--/.tags-->
+                    </div><!~~/.tags~~>
     				
     				<div class="widget blog_gallery">
                         <h3>Our Gallery</h3>
@@ -332,11 +333,11 @@
                             <li><a href="#"><img src="images/blog/gallery5.png" alt="" /></a></li>
                             <li><a href="#"><img src="images/blog/gallery6.png" alt="" /></a></li>
                         </ul>
-                    </div><!--/.blog_gallery-->
+                    </div><!~~/.blog_gallery~~>
     			</aside>  
-            </div><!--/.row-->
+            </div><!~~/.row~~>
         </div>
-    </section><!--/#blog-->
+    </section><!~~/#blog~~>
 
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -354,7 +355,7 @@
                             <li><a href="#">Contact us</a></li>
                         </ul>
                     </div>    
-                </div><!--/.col-md-3-->
+                </div><!~~/.col-md-3~~>
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
@@ -364,14 +365,14 @@
                             <li><a href="#">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!-- 
+<!~~ 
                             <li><a href="#">Refund policy</a></li>
                             <li><a href="#">Ticket system</a></li>
                             <li><a href="#">Billing system</a></li>
- -->
+ ~~>
                         </ul>
                     </div>    
-                </div><!--/.col-md-3-->
+                </div><!~~/.col-md-3~~>
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
@@ -380,16 +381,16 @@
                             <li><a href="#">Local Representatives</a></li>
                             <li><a href="#">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!-- 
+                           <!~~ 
  <li><a href="#">Development</a></li>
                             <li><a href="#">Email Marketing</a></li>
                             <li><a href="#">Plugin Development</a></li>
                             <li><a href="#">Article Writing</a></li>
- -->
+ ~~>
 
                         </ul>
                     </div>    
-                </div><!--/.col-md-3-->
+                </div><!~~/.col-md-3~~>
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
@@ -404,9 +405,14 @@
                             <li><a href="#">Laboris</a></li>
                         </ul>
                     </div>    
-                </div><!--/.col-md-3-->
+                </div><!~~/.col-md-3~~>
             </div>
         </div>
+ -->
+ 
+ <iframe name="myframe" src="https://talediscussion.meteor.com" width="100%" height="100%" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=auto></iframe>
+ 
+ 
     </section><!--/#bottom-->
 
     <footer id="footer" class="midnight-blue">
