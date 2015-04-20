@@ -20,43 +20,61 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 
 
-<!-- Original CakePhp Default Layout -->
+
+
+<!-- Bootstrap Default Cakephp Layout -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
-	</title>
-	<?php
+  <?php echo $this->Html->charset(); ?>
+  <title><?php echo $title_for_layout; ?></title>
+  <!--  meta info -->
+
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- styles -->
+  <?php
+    echo $this->Html->css('bootstrap');
+    echo $this->Html->css('bootstrap-responsive');
+    echo $this->Html->css('docs');
+    echo $this->Html->css('prettify');
+    echo $this->Html->css('bootstrap.min');
+    echo $this->Html->css('font-awesome.min');
+    echo $this->Html->css('animate.min');
+    echo $this->Html->css('prettyPhoto');
+    echo $this->Html->css('main');
+    echo $this->Html->css('responsive');
 		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
-	?>
+  ?>
+  <!-- icons -->
+  <?php
+    echo  $this->Html->meta('icon',$this->webroot.'img/favicon.ico');
+    echo $this->Html->meta(array('rel' => 'apple-touch-icon',
+      'href'=>$this->webroot.'img/apple-touch-icon.png'));
+    echo $this->Html->meta(array('rel' => 'apple-touch-icon',
+      'href'=>$this->webroot.'img/apple-touch-icon.png',  'sizes'=>'72x72'));
+    echo $this->Html->meta(array('rel' => 'apple-touch-icon',
+      'href'=>$this->webroot.'img/apple-touch-icon.png',  'sizes'=>'114x114'));
+  ?>
+  <!-- page specific scripts -->
+    <?php echo $scripts_for_layout; ?>
 </head>
-<body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+  <div id="container">
 		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
-
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-
-			<p>
-			</p>
-		</div>
-	</div>
-	<?php //echo $this->element('sql_dump'); ?>
+  <div id="row">
+  </div>
+  </div>
+  <?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>

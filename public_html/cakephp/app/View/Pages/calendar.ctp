@@ -6,19 +6,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Calendar | Political Visions</title>
-	
+
 	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!--
+ <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-	
+ -->
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -40,7 +42,7 @@
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
@@ -67,7 +69,7 @@
                     </button>
                     <a class="navbar-brand" href="index.html"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><!--<a href="index.ctp">Home</a>-->
@@ -100,7 +102,7 @@
     						)
 						);?>
                         </li>
-                        <li><!--<a href="bills.ctp">Bills</a>-->
+                        <li class="active"><!--<a href="bills.ctp">Bills</a>-->
                          <?php echo $this->Html->link(
     						'Bills',
     						'/bills',
@@ -110,7 +112,7 @@
     						)
 						);?>
 						</li>
-                        <li class="active"><!--<a href="calendar.ctp">Calendar</a>-->
+                        <li><!--<a href="calendar.ctp">Calendar</a>-->
                          <?php echo $this->Html->link(
     						'Calendar',
     						'/calendar',
@@ -141,129 +143,116 @@
     						)
 						);?>
                         </li>
-                        <li>
-                        <?php echo $this->Html->link(
-    						'Login',
-    						'/login',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'login',
-    						)
-						);?>
-                        </li>                       
+
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-		
+
     </header><!--/header-->
     <section id="about-us">
         <div class="container">
 			<div class="center wow fadeInDown">
 				<h2>Calendar</h2>
 			</div>
-			
+
 		</div><!--/.container-->
     </section><!--/about-us-->
-	
-    <section id="bottom">
-        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">We are hiring</a></li>
-                            <li><a href="#">Meet the team</a></li>
-                            <li><a href="#">Copyright</a></li>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Support</h3>
-                        <ul>
+        <section id="bottom">
+            <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">We are hiring</a></li>
+                                <li><a href="#">Meet the team</a></li>
+                                <li><a href="#">Copyright</a></li>
+                                <li><a href="#">Terms of use</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h3>Support</h3>
+                            <ul>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">Discussion</a></li>
+                                <li><a href="#">Forum</a></li>
+                                <li><a href="#">Documentation</a></li>
+    <!--
+                                <li><a href="#">Refund policy</a></li>
+                                <li><a href="#">Ticket system</a></li>
+                                <li><a href="#">Billing system</a></li>
+     -->
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h3>Politicians</h3>
+                            <ul>
+                                <li><a href="#">Local Representatives</a></li>
+                                <li><a href="#">Contact Politician</a></li>
+                                <li><a href="#">Recent News</a></li>
+                               <!--
+     <li><a href="#">Development</a></li>
+                                <li><a href="#">Email Marketing</a></li>
+                                <li><a href="#">Plugin Development</a></li>
+                                <li><a href="#">Article Writing</a></li>
+     -->
+
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h3>Our Partners and Supporters</h3>
+                            <ul>
+                                <li><a href="#">Adipisicing Elit</a></li>
+                                <li><a href="#">Eiusmod</a></li>
+                                <li><a href="#">Tempor</a></li>
+                                <li><a href="#">Veniam</a></li>
+                                <li><a href="#">Exercitation</a></li>
+                                <li><a href="#">Ullamco</a></li>
+                                <li><a href="#">Laboris</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+                </div>
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="midnight-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2015 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">TALE</a>. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pull-right">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
                             <li><a href="#">Faq</a></li>
-                            <li><a href="#">Discussion</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#">Documentation</a></li>
-<!-- 
-                            <li><a href="#">Refund policy</a></li>
-                            <li><a href="#">Ticket system</a></li>
-                            <li><a href="#">Billing system</a></li>
- -->
+                            <li><a href="#">Contact Us</a></li>
                         </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Politicians</h3>
-                        <ul>
-                            <li><a href="#">Local Representatives</a></li>
-                            <li><a href="#">Contact Politician</a></li>
-                            <li><a href="#">Recent News</a></li>
-                           <!-- 
- <li><a href="#">Development</a></li>
-                            <li><a href="#">Email Marketing</a></li>
-                            <li><a href="#">Plugin Development</a></li>
-                            <li><a href="#">Article Writing</a></li>
- -->
-
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Our Partners and Supporters</h3>
-                        <ul>
-                            <li><a href="#">Adipisicing Elit</a></li>
-                            <li><a href="#">Eiusmod</a></li>
-                            <li><a href="#">Tempor</a></li>
-                            <li><a href="#">Veniam</a></li>
-                            <li><a href="#">Exercitation</a></li>
-                            <li><a href="#">Ullamco</a></li>
-                            <li><a href="#">Laboris</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-            </div>
-        </div>
-    </section><!--/#bottom-->
-
-    <footer id="footer" class="midnight-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2015 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">TALE</a>. All Rights Reserved.
-                </div>
-                <div class="col-sm-6">
-                    <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer><!--/#footer-->
-    
+        </footer><!--/#footer-->
 
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript">
-        $('.carousel').carousel()
-    </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script>
-</body>
-</html>
+        <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.js"></script>
+        <script src="<?php echo $this->webroot; ?>/app/webroot/js/bootstrap.min.js"></script>
+        <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.prettyPhoto.js"></script>
+        <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.isotope.min.js"></script>
+        <script src="<?php echo $this->webroot; ?>/app/webroot/js/main.js"></script>
+        <script src="<?php echo $this->webroot; ?>/app/webroot/js/wow.min.js"></script>
+    </body>
+    </html>

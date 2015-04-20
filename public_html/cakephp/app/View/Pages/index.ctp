@@ -8,9 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Home | Political Visions</title>
-	
+
 	<!-- core CSS -->
-    <!-- 
+    <!--
 echo $this->Html->css('bootstrap.min');
     echo $this->Html->css('font-awesome.min');
     echo $this->Html->css('animate.min');
@@ -23,7 +23,7 @@ echo $this->Html->css('bootstrap.min');
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -45,7 +45,7 @@ echo $this->Html->css('bootstrap.min');
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
@@ -72,7 +72,7 @@ echo $this->Html->css('bootstrap.min');
                     </button>
                     <a class="navbar-brand" href="index.html"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><!--<a href="index.ctp">Home</a>-->
@@ -82,16 +82,6 @@ echo $this->Html->css('bootstrap.min');
     						array(
         						'controller' => 'pages',
         						'action' => 'index',
-    						)
-						);?>
-                        </li>
-                        <li><!--<a href="about-us.html">About Us</a>-->
-                         <?php echo $this->Html->link(
-    						'About Us',
-    						'/about',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'about',
     						)
 						);?>
                         </li>
@@ -136,31 +126,52 @@ echo $this->Html->css('bootstrap.min');
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li><!--<a href="contact-us.html">Contact</a>-->
+                        <li class="dropdown">
                         	<?php echo $this->Html->link(
-    							'Contact Us',
-    							'/contact',
-    							array(
-        							'controller' => 'pages',
-        							'action' => 'contact',
-    							)
-							);?>
-                        </li> 
-                        <li>
-                        <?php echo $this->Html->link(
-    						'Login',
-    						'/login',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'login',
-    						)
-						);?>
-                        </li>                     
+                        		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
+    							'Contact',
+    							'#',
+   								array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
+							);
+                        	?>
+							<ul class="dropdown-menu">
+								<li><!--<a href="contact_us">Contact Us</a>-->
+								 <?php echo $this->Html->link(
+									'Contact Us',
+									'/contact_us',
+									array(
+										'controller' => 'pages',
+										'action' => 'contact_us',
+									)
+								);?>
+								</li>
+								<li><!--<a href="contact_politician">Contact Politicain</a>-->
+								 <?php echo $this->Html->link(
+									'Contact Politician',
+									'/contact_politician',
+									array(
+										'controller' => 'pages',
+										'action' => 'contact_politician',
+									)
+								);?>
+								</li>
+							</ul>
+						</li>
+            <li><!--<a href="about-us.html">About Us</a>-->
+             <?php echo $this->Html->link(
+                  'About Us',
+                  '/about',
+                  array(
+                      'controller' => 'pages',
+                      'action' => 'about',
+                  )
+              );?>
+            </li>
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-		
+
     </header><!--/header-->
 
     <section id="main-slider" class="no-margin">
@@ -171,7 +182,7 @@ echo $this->Html->css('bootstrap.min');
                 <li data-target="#main-slider" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-            
+
              <div class="item active" style="background-image: url(<?php echo $this->webroot; ?>/app/webroot/img/slider/USFlag.jpg)">
                     <div class="container">
                         <div class="row slide-margin">
@@ -274,7 +285,7 @@ echo $this->Html->css('bootstrap.min');
                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
                         </div>
                     </div><!--/.col-md-4-->
-                
+
                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-leaf"></i>
@@ -299,7 +310,7 @@ echo $this->Html->css('bootstrap.min');
                         </div>
                     </div><!--/.col-md-4-->
                 </div><!--/.services-->
-            </div><!--/.row-->    
+            </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#feature-->
 
@@ -319,10 +330,10 @@ echo $this->Html->css('bootstrap.min');
                                 <h3><a href="#">Business theme</a> </h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                 <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
-                </div>   
+                </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
@@ -332,10 +343,10 @@ echo $this->Html->css('bootstrap.min');
                                 <h3><a href="#">Business theme</a></h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                 <a class="preview" href="images/portfolio/full/item2.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
@@ -345,10 +356,10 @@ echo $this->Html->css('bootstrap.min');
                                 <h3><a href="#">Business theme </a></h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                 <a class="preview" href="images/portfolio/full/item3.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
-                </div>   
+                </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
@@ -358,12 +369,12 @@ echo $this->Html->css('bootstrap.min');
                                 <h3><a href="#">Business theme </a></h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                 <a class="preview" href="images/portfolio/full/item4.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
-                </div>   
-                
-                <!-- 
+                </div>
+
+                <!--
 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
                         <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
@@ -372,10 +383,10 @@ echo $this->Html->css('bootstrap.min');
                                 <h3><a href="#">Business theme</a></h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                 <a class="preview" href="images/portfolio/full/item5.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
-                </div>   
+                </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
@@ -385,10 +396,10 @@ echo $this->Html->css('bootstrap.min');
                                 <h3><a href="#">Business theme </a></h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                 <a class="preview" href="images/portfolio/full/item6.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
@@ -398,10 +409,10 @@ echo $this->Html->css('bootstrap.min');
                                 <h3><a href="#">Business theme </a></h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                 <a class="preview" href="images/portfolio/full/item7.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
-                </div>   
+                </div>
 
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
@@ -411,16 +422,16 @@ echo $this->Html->css('bootstrap.min');
                                 <h3><a href="#">Business theme </a></h3>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                 <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
+                            </div>
                         </div>
                     </div>
-                </div>  
- --> 
+                </div>
+ -->
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#recent-works-->
 
-    <!-- 
+    <!--
 <section id="services" class="service-item">
 	   <div class="container">
             <div class="center wow fadeInDown">
@@ -464,7 +475,7 @@ echo $this->Html->css('bootstrap.min');
                             <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
                         </div>
                     </div>
-                </div>  
+                </div>
 
                 <div class="col-sm-6 col-md-4">
                     <div class="media services-wrap wow fadeInDown">
@@ -500,7 +511,7 @@ echo $this->Html->css('bootstrap.min');
                             <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
                         </div>
                     </div>
-                </div>                                                
+                </div>
             </div><!~~/.row~~>
         </div><!~~/.container~~>
     </section><!~~/#services~~>
@@ -515,7 +526,7 @@ echo $this->Html->css('bootstrap.min');
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                         <div class="progress-wrap">
-                            <h3>Voting Eligible Population</h3>
+                            <h3>Voting Eligible Population</h3><br>
                             <div class="progress">
                               <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 36.4%">
                                 <span class="bar-width">36.4%</span>
@@ -525,7 +536,7 @@ echo $this->Html->css('bootstrap.min');
                         </div>
 
                         <div class="progress-wrap">
-                            <h3>Youth Voters (18 - 29) years of age</h3>
+                            <h3>Youth Voters (18 - 29) years of age</h3><br>
                             <div class="progress">
                               <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 21.3%">
                                <span class="bar-width">21.3%</span>
@@ -534,7 +545,7 @@ echo $this->Html->css('bootstrap.min');
                         </div>
 
                         <div class="progress-wrap">
-                            <h3>Voters (40+) years of age </h3>
+                            <h3>Voters (40+) years of age </h3><br>
                             <div class="progress">
                               <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 67%">
                                 <span class="bar-width">67%</span>
@@ -542,7 +553,7 @@ echo $this->Html->css('bootstrap.min');
                             </div>
                         </div>
 
-                        <!-- 
+                        <!--
 <div class="progress-wrap">
                             <h3>Wordpress</h3>
                             <div class="progress">
@@ -641,13 +652,13 @@ echo $this->Html->css('bootstrap.min');
         </div><!--/.container-->
     </section><!--/#middle-->
 
-    
-    <!-- 
+
+    <!--
 <section id="content">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 wow fadeInDown">
-                   <div class="tab-wrap"> 
+                   <div class="tab-wrap">
                         <div class="media">
                             <div class="parrent pull-left">
                                 <ul class="nav nav-tabs nav-stacked">
@@ -689,7 +700,7 @@ echo $this->Html->css('bootstrap.min');
                                      <div class="tab-pane fade" id="tab3">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
                                      </div>
-                                     
+
                                      <div class="tab-pane fade" id="tab4">
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words</p>
                                      </div>
@@ -697,12 +708,12 @@ echo $this->Html->css('bootstrap.min');
                                      <div class="tab-pane fade" id="tab5">
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,</p>
                                      </div>
-                                </div> <!~~/.tab-content~~>  
-                            </div> <!~~/.media-body~~> 
-                        </div> <!~~/.media~~>     
-                    </div><!~~/.tab-wrap~~>               
+                                </div> <!~~/.tab-content~~>
+                            </div> <!~~/.media-body~~>
+                        </div> <!~~/.media~~>
+                    </div><!~~/.tab-wrap~~>
                 </div><!~~/.col-sm-6~~>
-                
+
 
                 <div class="col-xs-12 col-sm-4 wow fadeInDown">
                     <div class="testimonial">
@@ -740,7 +751,7 @@ echo $this->Html->css('bootstrap.min');
             <div class="center wow fadeInDown">
                 <h2>Our Partners and Supporters</h2>
                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>    
+            </div>
 
             <div class="partners">
                 <ul>
@@ -750,11 +761,11 @@ echo $this->Html->css('bootstrap.min');
                     <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/partner4.png"></a></li>
                     <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/partner5.png"></a></li>
                 </ul>
-            </div>        
+            </div>
         </div><!--/.container-->
     </section><!--/#partner-->
 
-    <!-- 
+    <!--
 <section id="conatcat-info">
         <div class="container">
             <div class="row">
@@ -770,7 +781,7 @@ echo $this->Html->css('bootstrap.min');
                     </div>
                 </div>
             </div>
-        </div><!~~/.container~~>    
+        </div><!~~/.container~~>
     </section><!~~/#conatcat-info~~>
  -->
 
@@ -781,15 +792,15 @@ echo $this->Html->css('bootstrap.min');
                     <div class="widget">
                         <h3>Company</h3>
                         <ul>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="about">About us</a></li>
                             <li><a href="#">We are hiring</a></li>
                             <li><a href="#">Meet the team</a></li>
                             <li><a href="#">Copyright</a></li>
                             <li><a href="#">Terms of use</a></li>
                             <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="contact_us">Contact us</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -797,16 +808,16 @@ echo $this->Html->css('bootstrap.min');
                         <h3>Support</h3>
                         <ul>
                             <li><a href="#">Faq</a></li>
-                            <li><a href="#">Discussion</a></li>
+                            <li><a href="discussion">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!-- 
+<!--
                             <li><a href="#">Refund policy</a></li>
                             <li><a href="#">Ticket system</a></li>
                             <li><a href="#">Billing system</a></li>
  -->
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -814,9 +825,9 @@ echo $this->Html->css('bootstrap.min');
                         <h3>Politicians</h3>
                         <ul>
                             <li><a href="#">Local Representatives</a></li>
-                            <li><a href="#">Contact Politician</a></li>
+                            <li><a href="contact_politician">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!-- 
+                           <!--
  <li><a href="#">Development</a></li>
                             <li><a href="#">Email Marketing</a></li>
                             <li><a href="#">Plugin Development</a></li>
@@ -824,7 +835,7 @@ echo $this->Html->css('bootstrap.min');
  -->
 
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -839,7 +850,7 @@ echo $this->Html->css('bootstrap.min');
                             <li><a href="#">Ullamco</a></li>
                             <li><a href="#">Laboris</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
             </div>
         </div>
@@ -853,10 +864,10 @@ echo $this->Html->css('bootstrap.min');
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
                         <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="contact_us">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
