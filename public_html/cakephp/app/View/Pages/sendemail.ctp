@@ -8,12 +8,14 @@
     <title>Calendar | Political Visions</title>
 	
 	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!-- 
+ <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+ -->
 	
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -100,7 +102,7 @@
     						)
 						);?>
                         </li>
-                        <li class="active"><!--<a href="bills.ctp">Bills</a>-->
+                        <li><!--<a href="bills.ctp">Bills</a>-->
                          <?php echo $this->Html->link(
     						'Bills',
     						'/bills',
@@ -131,39 +133,17 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li class="dropdown">
-                        	<?php echo $this->Html->link(
-                        		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
-    							'Contact',
-    							'#',
-   								array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
-							);
-                        	?>
-							<ul class="dropdown-menu">
-								<li><!--<a href="contact_us">Contact Us</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Us',
-									'/contact_us',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_us',
-									)
-								);?>
-								</li>
-								<li><!--<a href="contact_politician">Contact Politicain</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Politician',
-									'/contact_politician',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_politician',
-									)
-								);?>
-								</li>
-							</ul>
-						</li>	 
-                        <!-- 
-<li>
+                        <li class="active"><!--<a href="contact-us.html">Contact</a>-->
+                         <?php echo $this->Html->link(
+    						'Contact Us',
+    						'/contact',
+    						array(
+        						'controller' => 'pages',
+        						'action' => 'contact',
+    						)
+						);?>
+                        </li>
+                        <li>
                         <?php echo $this->Html->link(
     						'Login',
     						'/login',
@@ -172,8 +152,7 @@
         						'action' => 'login',
     						)
 						);?>
-                        </li>       
- -->                
+                        </li>                       
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -181,14 +160,15 @@
 		
     </header><!--/header-->
 
-    <section id="about-us">
+<!--Start Here for Page Creations-->
+    <section>
         <div class="container">
 			<div class="center wow fadeInDown">
-				<h2>Bills</h2>
+				<h2>Example Text Header</h2>
 			</div>
-			
 		</div><!--/.container-->
-    </section><!--/about-us-->
+    </section>
+<!--End Here for Page Creations-->
 	
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -290,4 +270,4 @@
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
 </body>
-</html>
+</html> 
