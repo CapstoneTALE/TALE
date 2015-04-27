@@ -14,6 +14,8 @@
     <link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    //Calendar Integration
+    <link rel="stylesheet" href="css/calendar.css">
 	
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -162,7 +164,8 @@
 								</li>
 							</ul>
 						</li>	 
-                        <li>
+                        <!-- 
+<li>
                         <?php echo $this->Html->link(
     						'Login',
     						'/login',
@@ -171,7 +174,8 @@
         						'action' => 'login',
     						)
 						);?>
-                        </li>                       
+                        </li>        
+ -->               
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -182,6 +186,9 @@
         <div class="container">
 			<div class="center wow fadeInDown">
 				<h2>Calendar</h2>
+				<div id="calendar">
+				
+				</div>
 			</div>
 			
 		</div><!--/.container-->
@@ -286,5 +293,16 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    //Calendar
+    <script type="text/javascript" src="js/vendor/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/vendor/underscore-min.js"></script>
+	<script type="text/javascript" src="js/calendar.js"></script>
+	<script type="text/javascript">
+		var calendar = $("#calendar").calendar(
+			{
+				tmpl_path: "/tmpls/",
+				events_source: function () { return []; }
+			});         
+	</script>
 </body>
 </html>
