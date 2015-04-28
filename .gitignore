@@ -41,22 +41,8 @@ sftp-config.json
 
 .htaccess
 
-public_html/cakephp/.htaccess
+/TALE/public_html/cakephp/.htaccess
 
-public_html/cakephp/app/.htaccess
+/TALE/public_html/cakephp/app/.htaccess
 
-public_html/cakephp/app/webroot/.htaccess
-<<<<<<< HEAD
-
-
-=======
-<<<<<<< HEAD
-
-=======
-<<<<<<< Updated upstream
-
-
-=======
->>>>>>> Stashed changes
->>>>>>> master
->>>>>>> Lorenzo_Parks_Branch
+/TALE/public_html/cakephp/app/webroot/.htaccess
