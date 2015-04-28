@@ -42,7 +42,7 @@
 /**
  *..Enter Page Routes Here (LP) Last Edited 2/17/15 Like below for any page
  */
-	
+
 	Router::connect('/index', array('controller' => 'pages', 'action' => 'display', 'index'));
 
 	Router::connect('/about', array('controller' => 'pages', 'action' => 'display', 'about'));
@@ -53,7 +53,6 @@
 	Router::connect('/discussion', array('controller' => 'pages', 'action' => 'display', 'discussion'));
 	Router::connect('/login', array('controller' => 'pages', 'action' => 'display', 'login'));
 	Router::connect('/signup', array('controller' => 'pages', 'action' => 'display', 'signup'));
-	Router::connect('/sendemail', array('controller' => 'pages', 'action' => 'display', 'sendemail'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on

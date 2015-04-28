@@ -6,19 +6,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Calendar | Political Visions</title>
-	
+
 	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!--
+ <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-	
+ -->
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -40,7 +42,7 @@
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
@@ -65,61 +67,51 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><!--<a href="index.ctp">Home</a>-->
                         <?php echo $this->Html->link(
-    						'Home',
-    						'/index',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'index',
-    						)
-						);?>
-                        </li>
-                        <li><!--<a href="about-us.html">About Us</a>-->
-                         <?php echo $this->Html->link(
-    						'About Us',
-    						'/about',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'about',
-    						)
-						);?>
+                'Home',
+                '/index',
+                array(
+                    'controller' => 'pages',
+                    'action' => 'index',
+                )
+            );?>
                         </li>
                         <li><!--<a href="discussion.ctp">Discussion</a>-->
                         <?php echo $this->Html->link(
-    						'Discussion',
-    						'/discussion',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'discussion',
-    						)
-						);?>
+                'Discussion',
+                '/discussion',
+                array(
+                    'controller' => 'pages',
+                    'action' => 'discussion',
+                )
+            );?>
                         </li>
                         <li><!--<a href="bills.ctp">Bills</a>-->
                          <?php echo $this->Html->link(
-    						'Bills',
-    						'/bills',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'bills',
-    						)
-						);?>
-						</li>
+                'Bills',
+                '/bills',
+                array(
+                    'controller' => 'pages',
+                    'action' => 'bills',
+                )
+            );?>
+            </li>
                         <li class="active"><!--<a href="calendar.ctp">Calendar</a>-->
                          <?php echo $this->Html->link(
-    						'Calendar',
-    						'/calendar',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'calendar',
-    						)
-						);?>
-						</li>
+                'Calendar',
+                '/calendar',
+                array(
+                    'controller' => 'pages',
+                    'action' => 'calendar',
+                )
+            );?>
+            </li>
                         <!--<li><a href="services.html">Services</a></li>-->
                         <!--<li><a href="portfolio.html">Portfolio</a></li>-->
                         <!--<li class="dropdown">
@@ -132,61 +124,61 @@
                             </ul>
                         </li>-->
                         <li class="dropdown">
-                        	<?php echo $this->Html->link(
-                        		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
-    							'Contact',
-    							'#',
-   								array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
-							);
-                        	?>
-							<ul class="dropdown-menu">
-								<li><!--<a href="contact_us">Contact Us</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Us',
-									'/contact_us',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_us',
-									)
-								);?>
-								</li>
-								<li><!--<a href="contact_politician">Contact Politicain</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Politician',
-									'/contact_politician',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_politician',
-									)
-								);?>
-								</li>
-							</ul>
-						</li>	 
-                        <li>
-                        <?php echo $this->Html->link(
-    						'Login',
-    						'/login',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'login',
-    						)
-						);?>
-                        </li>                       
+                          <?php echo $this->Html->link(
+                            //$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
+                  'Contact',
+                  '#',
+                   array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
+              );
+                          ?>
+              <ul class="dropdown-menu">
+                <li><!--<a href="contact_us">Contact Us</a>-->
+                 <?php echo $this->Html->link(
+                  'Contact Us',
+                  '/contact_us',
+                  array(
+                    'controller' => 'pages',
+                    'action' => 'contact_us',
+                  )
+                );?>
+                </li>
+                <li><!--<a href="contact_politician">Contact Politicain</a>-->
+                 <?php echo $this->Html->link(
+                  'Contact Politician',
+                  '/contact_politician',
+                  array(
+                    'controller' => 'pages',
+                    'action' => 'contact_politician',
+                  )
+                );?>
+                </li>
+              </ul>
+            </li>
+            <li><!--<a href="about-us.html">About Us</a>-->
+             <?php echo $this->Html->link(
+                  'About Us',
+                  '/about',
+                  array(
+                      'controller' => 'pages',
+                      'action' => 'about',
+                  )
+              );?>
+            </li>
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-		
-    </header><!--/header-->
+
+  </header><!--/header-->
     <section id="about-us">
         <div class="container">
 			<div class="center wow fadeInDown">
 				<h2>Calendar</h2>
 			</div>
-			
+
 		</div><!--/.container-->
     </section><!--/about-us-->
-	
+
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
@@ -194,15 +186,15 @@
                     <div class="widget">
                         <h3>Company</h3>
                         <ul>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="about">About us</a></li>
                             <li><a href="#">We are hiring</a></li>
                             <li><a href="#">Meet the team</a></li>
                             <li><a href="#">Copyright</a></li>
                             <li><a href="#">Terms of use</a></li>
                             <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="contact_us">Contact us</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -210,16 +202,16 @@
                         <h3>Support</h3>
                         <ul>
                             <li><a href="#">Faq</a></li>
-                            <li><a href="#">Discussion</a></li>
+                            <li><a href="discussion">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!-- 
+<!--
                             <li><a href="#">Refund policy</a></li>
                             <li><a href="#">Ticket system</a></li>
                             <li><a href="#">Billing system</a></li>
  -->
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -227,9 +219,9 @@
                         <h3>Politicians</h3>
                         <ul>
                             <li><a href="#">Local Representatives</a></li>
-                            <li><a href="#">Contact Politician</a></li>
+                            <li><a href="contact_politician">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!-- 
+                           <!--
  <li><a href="#">Development</a></li>
                             <li><a href="#">Email Marketing</a></li>
                             <li><a href="#">Plugin Development</a></li>
@@ -237,7 +229,7 @@
  -->
 
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -252,7 +244,7 @@
                             <li><a href="#">Ullamco</a></li>
                             <li><a href="#">Laboris</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
             </div>
         </div>
@@ -266,25 +258,21 @@
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
                         <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="contact_us">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer><!--/#footer-->
-    
 
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript">
-        $('.carousel').carousel()
-    </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/bootstrap.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.prettyPhoto.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.isotope.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/main.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/wow.min.js"></script>
 </body>
 </html>

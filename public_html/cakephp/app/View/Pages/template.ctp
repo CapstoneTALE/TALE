@@ -6,9 +6,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Calendar | Political Visions</title>
-	
+
 	<!-- core CSS -->
-   <!-- 
+   <!--
  <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -16,11 +16,11 @@
 	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
  -->
-	
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -42,7 +42,7 @@
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
@@ -69,7 +69,7 @@
                     </button>
                     <a class="navbar-brand" href="index.html"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><!--<a href="index.ctp">Home</a>-->
@@ -143,21 +143,12 @@
     						)
 						);?>
                         </li>
-                        <li>
-                        <?php echo $this->Html->link(
-    						'Login',
-    						'/login',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'login',
-    						)
-						);?>
-                        </li>                       
+                                  
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-		
+
     </header><!--/header-->
 
 <!--Start Here for Page Creations-->
@@ -169,7 +160,7 @@
 		</div><!--/.container-->
     </section>
 <!--End Here for Page Creations-->
-	
+
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
@@ -185,7 +176,7 @@
                             <li><a href="#">Privacy policy</a></li>
                             <li><a href="#">Contact us</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -196,13 +187,13 @@
                             <li><a href="#">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!-- 
+<!--
                             <li><a href="#">Refund policy</a></li>
                             <li><a href="#">Ticket system</a></li>
                             <li><a href="#">Billing system</a></li>
  -->
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -212,7 +203,7 @@
                             <li><a href="#">Local Representatives</a></li>
                             <li><a href="#">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!-- 
+                           <!--
  <li><a href="#">Development</a></li>
                             <li><a href="#">Email Marketing</a></li>
                             <li><a href="#">Plugin Development</a></li>
@@ -220,7 +211,7 @@
  -->
 
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -235,7 +226,7 @@
                             <li><a href="#">Ullamco</a></li>
                             <li><a href="#">Laboris</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
             </div>
         </div>
@@ -258,7 +249,7 @@
             </div>
         </div>
     </footer><!--/#footer-->
-    
+
 
     <script src="js/jquery.js"></script>
     <script type="text/javascript">

@@ -45,4 +45,13 @@ sftp-config.json
 
 /TALE/public_html/cakephp/app/.htaccess
 
+<<<<<<< HEAD
 /TALE/public_html/cakephp/app/webroot/.htaccess
+=======
+public_html/cakephp/app/webroot/.htaccess
+<<<<<<< Updated upstream
+
+
+=======
+>>>>>>> Stashed changes
+>>>>>>> master
