@@ -14,8 +14,6 @@
     <link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    //Calendar Integration
-    <link rel="stylesheet" href="css/calendar.css">
 	
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -133,39 +131,17 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li class="dropdown">
-                        	<?php echo $this->Html->link(
-                        		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
-    							'Contact',
-    							'#',
-   								array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
-							);
-                        	?>
-							<ul class="dropdown-menu">
-								<li><!--<a href="contact_us">Contact Us</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Us',
-									'/contact_us',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_us',
-									)
-								);?>
-								</li>
-								<li><!--<a href="contact_politician">Contact Politicain</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Politician',
-									'/contact_politician',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_politician',
-									)
-								);?>
-								</li>
-							</ul>
-						</li>	 
-                        <!-- 
-<li>
+                        <li><!--<a href="contact-us.html">Contact</a>-->
+                         <?php echo $this->Html->link(
+    						'Contact Us',
+    						'/contact',
+    						array(
+        						'controller' => 'pages',
+        						'action' => 'contact',
+    						)
+						);?>
+                        </li>
+                        <li>
                         <?php echo $this->Html->link(
     						'Login',
     						'/login',
@@ -174,8 +150,7 @@
         						'action' => 'login',
     						)
 						);?>
-                        </li>        
- -->               
+                        </li>                       
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -186,9 +161,6 @@
         <div class="container">
 			<div class="center wow fadeInDown">
 				<h2>Calendar</h2>
-				<div id="calendar">
-				
-				</div>
 			</div>
 			
 		</div><!--/.container-->
@@ -293,16 +265,5 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
-    //Calendar
-    <script type="text/javascript" src="js/vendor/jquery-1.9.1.js"></script>
-	<script type="text/javascript" src="js/vendor/underscore-min.js"></script>
-	<script type="text/javascript" src="js/calendar.js"></script>
-	<script type="text/javascript">
-		var calendar = $("#calendar").calendar(
-			{
-				tmpl_path: "/tmpls/",
-				events_source: function () { return []; }
-			});         
-	</script>
 </body>
 </html>

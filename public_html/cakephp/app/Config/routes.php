@@ -32,7 +32,7 @@
 
 
 
-	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'index'));
+	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 	//Router::connect('/', array('controller' => 'posts', 'action' => 'index'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
@@ -46,14 +46,12 @@
 	Router::connect('/index', array('controller' => 'pages', 'action' => 'display', 'index'));
 
 	Router::connect('/about', array('controller' => 'pages', 'action' => 'display', 'about'));
-	Router::connect('/contact_us', array('controller' => 'pages', 'action' => 'display', 'contact_us'));
-	Router::connect('/contact_politician', array('controller' => 'pages', 'action' => 'display', 'contact_politician'));
+	Router::connect('/contact', array('controller' => 'pages', 'action' => 'display', 'contact'));
 	Router::connect('/calendar', array('controller' => 'pages', 'action' => 'display', 'calendar'));
 	Router::connect('/bills', array('controller' => 'pages', 'action' => 'display', 'bills'));
 	Router::connect('/discussion', array('controller' => 'pages', 'action' => 'display', 'discussion'));
 	Router::connect('/login', array('controller' => 'pages', 'action' => 'display', 'login'));
 	Router::connect('/signup', array('controller' => 'pages', 'action' => 'display', 'signup'));
-	Router::connect('/sendemail', array('controller' => 'pages', 'action' => 'display', 'sendemail'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on

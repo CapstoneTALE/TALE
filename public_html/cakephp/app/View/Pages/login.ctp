@@ -131,37 +131,16 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li class="dropdown">
-                        	<?php echo $this->Html->link(
-                        		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
-    							'Contact',
-    							'#',
-   								array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
-							);
-                        	?>
-							<ul class="dropdown-menu">
-								<li><!--<a href="contact_us">Contact Us</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Us',
-									'/contact_us',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_us',
-									)
-								);?>
-								</li>
-								<li><!--<a href="contact_politician">Contact Politicain</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Politician',
-									'/contact_politician',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_politician',
-									)
-								);?>
-								</li>
-							</ul>
-						</li>	 
+                        <li><!--<a href="contact-us.html">Contact</a>-->
+                         <?php echo $this->Html->link(
+    						'Contact Us',
+    						'/contact',
+    						array(
+        						'controller' => 'pages',
+        						'action' => 'contact',
+    						)
+						);?>
+                        </li>
                         <li class="active">
                         <?php echo $this->Html->link(
     						'Login',
@@ -315,6 +294,14 @@
 
     <script src="js/jquery.js"></script>
     <script type="text/javascript">
+        $('.carousel').carousel()
+    </script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/bootstrap.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
     $(function(){
     $('.button-checkbox').each(function(){
 		var $widget = $(this),
@@ -374,10 +361,5 @@
 	});
 });
     </script>
-    <script src="<?php echo $this->webroot; ?>/app/webroot/js/bootstrap.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="<?php echo $this->webroot; ?>/app/webroot/js/main.js"></script>
-    <script src="js/wow.min.js"></script>
 </body>
 </html>

@@ -8,12 +8,14 @@
     <title>Calendar | Political Visions</title>
 	
 	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!-- 
+ <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+ -->
 	
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -131,39 +133,17 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li class="dropdown">
-                        	<?php echo $this->Html->link(
-                        		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
-    							'Contact',
-    							'#',
-   								array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
-							);
-                        	?>
-							<ul class="dropdown-menu">
-								<li><!--<a href="contact_us">Contact Us</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Us',
-									'/contact_us',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_us',
-									)
-								);?>
-								</li>
-								<li><!--<a href="contact_politician">Contact Politicain</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Politician',
-									'/contact_politician',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_politician',
-									)
-								);?>
-								</li>
-							</ul>
-						</li>	 
-                        <!-- 
-<li>
+                        <li><!--<a href="contact-us.html">Contact</a>-->
+                         <?php echo $this->Html->link(
+    						'Contact Us',
+    						'/contact',
+    						array(
+        						'controller' => 'pages',
+        						'action' => 'contact',
+    						)
+						);?>
+                        </li>
+                        <li>
                         <?php echo $this->Html->link(
     						'Login',
     						'/login',
@@ -172,8 +152,7 @@
         						'action' => 'login',
     						)
 						);?>
-                        </li>       
- -->                
+                        </li>                       
                     </ul>
                 </div>
             </div><!--/.container-->

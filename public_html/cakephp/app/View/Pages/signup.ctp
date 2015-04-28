@@ -131,37 +131,16 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li class="dropdown">
-                        	<?php echo $this->Html->link(
-                        		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
-    							'Contact',
-    							'#',
-   								array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
-							);
-                        	?>
-							<ul class="dropdown-menu">
-								<li><!--<a href="contact_us">Contact Us</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Us',
-									'/contact_us',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_us',
-									)
-								);?>
-								</li>
-								<li><!--<a href="contact_politician">Contact Politicain</a>-->
-								 <?php echo $this->Html->link(
-									'Contact Politician',
-									'/contact_politician',
-									array(
-										'controller' => 'pages',
-										'action' => 'contact_politician',
-									)
-								);?>
-								</li>
-							</ul>
-						</li>	
+                        <li><!--<a href="contact-us.html">Contact</a>-->
+                         <?php echo $this->Html->link(
+    						'Contact Us',
+    						'/contact',
+    						array(
+        						'controller' => 'pages',
+        						'action' => 'contact',
+    						)
+						);?>
+                        </li>
                         <li class="active">
                         <?php echo $this->Html->link(
     						'Login',
@@ -187,7 +166,7 @@
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 		<form role="form">
 			<h2>Please Sign Up <small>It's free and always will be.</small></h2>
-			<hr>
+			<hr class="colorgraph">
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<div class="form-group">
@@ -219,18 +198,6 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-5 col-md-5">
-					Choose account type:
-				</div>
-				<div class="col-xs-12 col-sm-7 col-md-7">
-					<span class="button-checkbox">
-						<input type="radio" name="view" value="User"> User <br>
-						<input type="radio" name="view" value="Politicain"> Politician
-					</span>
-				</div>
-			</div>
-			<br>
-			<div class="row">
 				<div class="col-xs-4 col-sm-3 col-md-3">
 					<span class="button-checkbox">
 						<button type="button" class="btn" data-color="info" tabindex="7">I Agree</button>
@@ -242,7 +209,7 @@
 				</div>
 			</div>
 			
-			<hr>
+			<hr class="colorgraph">
 			<div class="row">
 				<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
 				<div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Sign In</a></div>
