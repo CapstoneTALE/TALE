@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Login | Political Visions</title>
-	
+
 	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -14,11 +14,11 @@
     <link href="css/animate.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-	
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -40,7 +40,7 @@
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
@@ -67,7 +67,7 @@
                     </button>
                     <a class="navbar-brand" href="index.html"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><!--<a href="index.ctp">Home</a>-->
@@ -131,16 +131,37 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li><!--<a href="contact-us.html">Contact</a>-->
-                         <?php echo $this->Html->link(
-    						'Contact Us',
-    						'/contact',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'contact',
-    						)
-						);?>
-                        </li>
+                        <li class="dropdown">
+                        	<?php echo $this->Html->link(
+                        		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
+    							'Contact',
+    							'#',
+   								array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
+							);
+                        	?>
+							<ul class="dropdown-menu">
+								<li><!--<a href="contact_us">Contact Us</a>-->
+								 <?php echo $this->Html->link(
+									'Contact Us',
+									'/contact_us',
+									array(
+										'controller' => 'pages',
+										'action' => 'contact_us',
+									)
+								);?>
+								</li>
+								<li><!--<a href="contact_politician">Contact Politicain</a>-->
+								 <?php echo $this->Html->link(
+									'Contact Politician',
+									'/contact_politician',
+									array(
+										'controller' => 'pages',
+										'action' => 'contact_politician',
+									)
+								);?>
+								</li>
+							</ul>
+						</li>
                         <li class="active">
                         <?php echo $this->Html->link(
     						'Login',
@@ -150,12 +171,12 @@
         						'action' => 'login',
     						)
 						);?>
-                        </li>                       
+                        </li>
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-		
+
     </header><!--/header-->
 
     <section id="about-us">
@@ -166,7 +187,7 @@
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 		<form role="form">
 			<h2>Please Sign Up <small>It's free and always will be.</small></h2>
-			<hr class="colorgraph">
+			<hr>
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<div class="form-group">
@@ -198,6 +219,18 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-xs-12 col-sm-5 col-md-5">
+					Choose account type:
+				</div>
+				<div class="col-xs-12 col-sm-7 col-md-7">
+					<span class="button-checkbox">
+						<input type="radio" name="view" value="User"> User <br>
+						<input type="radio" name="view" value="Politicain"> Politician
+					</span>
+				</div>
+			</div>
+			<br>
+			<div class="row">
 				<div class="col-xs-4 col-sm-3 col-md-3">
 					<span class="button-checkbox">
 						<button type="button" class="btn" data-color="info" tabindex="7">I Agree</button>
@@ -208,8 +241,8 @@
 					 By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site, including our Cookie Use.
 				</div>
 			</div>
-			
-			<hr class="colorgraph">
+
+			<hr>
 			<div class="row">
 				<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
 				<div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Sign In</a></div>
@@ -240,10 +273,10 @@
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-</div>	
+</div>
 		</div><!--/.container-->
     </section><!--/about-us-->
-	
+
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
@@ -259,7 +292,7 @@
                             <li><a href="#">Privacy policy</a></li>
                             <li><a href="#">Contact us</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -270,13 +303,13 @@
                             <li><a href="#">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!-- 
+<!--
                             <li><a href="#">Refund policy</a></li>
                             <li><a href="#">Ticket system</a></li>
                             <li><a href="#">Billing system</a></li>
  -->
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -286,7 +319,7 @@
                             <li><a href="#">Local Representatives</a></li>
                             <li><a href="#">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!-- 
+                           <!--
  <li><a href="#">Development</a></li>
                             <li><a href="#">Email Marketing</a></li>
                             <li><a href="#">Plugin Development</a></li>
@@ -294,7 +327,7 @@
  -->
 
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -309,7 +342,7 @@
                             <li><a href="#">Ullamco</a></li>
                             <li><a href="#">Laboris</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
             </div>
         </div>
@@ -332,7 +365,7 @@
             </div>
         </div>
     </footer><!--/#footer-->
-    
+
 
     <script src="js/jquery.js"></script>
     <script type="text/javascript">

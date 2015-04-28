@@ -35,32 +35,33 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
     public $helpers = array('Form', 'Html', 'Session');
     public $components = array(
-        //'DebugKit.Toolbar',
-        
-        'Session',
-        
+         'Session',
         /*'Auth' => array(
-            'loginRedirect' => array('controller' => '/Users/', 'action' => 'index'),
-            'logoutRedirect' => array('controller' => '/Users/', 'action' => 'login'),
-            'authError' => 'You are not allowed to see this page unless you are a registered user.'
-        )*/
+            'loginRedirect' => array(
+                'controller' => 'users',
+                'action' => 'index'
+            ),
+            'logoutRedirect' => array(
+                'controller' => 'pages',
+                'action' => 'display',
+                'index'
+            ),
+            'authorize' => array(
+              'Actions' => array('actionPath' => 'controllers')
+            ) // Added this line
+          )*/
     );
 
-    public function beforeFilter() {
-        
-        /*$user = $this->Auth->user();
-        if($user != null)
-        {
-            $this->Session->write('username', $user['username']);
-        }
-        
-        $user = $this->Auth->user();
-        if($user != null)
-        {
-            $this->Session->write('username', $user['username']);
-        } */     
+      public function beforeFilter() {
+          /*$this->Auth->allow('index', 'display', 'view');
+          $user = $this->Auth->user();
+          if($user != null)
+          {
+              $this->Session->write('username', $user['username']);
+          }
 
- }
+        */
+        }
+
 }
 ?>
-
