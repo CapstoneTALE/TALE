@@ -61,4 +61,12 @@ public_html/cakephp/app/webroot/.htaccess
 >>>>>>> master
 >>>>>>> Lorenzo_Parks_Branch
 
+<<<<<<< HEAD
 public_html/cakephp/app/Controller/Component/empty
+=======
+public_html/cakephp/.htaccess
+
+public_html/cakephp/app/.htaccess
+
+public_html/cakephp/app/webroot/.htaccess
+>>>>>>> Lorenzo_Parks_Branch

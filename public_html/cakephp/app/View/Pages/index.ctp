@@ -167,7 +167,8 @@ echo $this->Html->css('bootstrap.min');
 								</li>
 							</ul>
 						</li>	 
-                        <li>
+                        <!-- 
+<li>
                         <?php echo $this->Html->link(
     						'Login',
     						'/login',
@@ -176,7 +177,8 @@ echo $this->Html->css('bootstrap.min');
         						'action' => 'login',
     						)
 						);?>
-                        </li>                     
+                        </li>  
+ -->                   
                     </ul>
                 </div>
             </div><!--/.container-->
