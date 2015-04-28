@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Calendar | Political Visions</title>
-	
+    <title>Bills | Political Visions</title>
+
 	<!-- core CSS -->
    <!-- 
  <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+	  <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
  -->
 	
+=======
+
+>>>>>>> AD_Branch
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -42,7 +49,7 @@
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
@@ -67,9 +74,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><!--<a href="index.ctp">Home</a>-->
@@ -79,16 +86,6 @@
     						array(
         						'controller' => 'pages',
         						'action' => 'index',
-    						)
-						);?>
-                        </li>
-                        <li><!--<a href="about-us.html">About Us</a>-->
-                         <?php echo $this->Html->link(
-    						'About Us',
-    						'/about',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'about',
     						)
 						);?>
                         </li>
@@ -163,24 +160,22 @@
 								);?>
 								</li>
 							</ul>
-						</li>	 
-                        <!-- 
-<li>
-                        <?php echo $this->Html->link(
-    						'Login',
-    						'/login',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'login',
-    						)
-						);?>
-                        </li>       
- -->                
+						</li>
+            <li><!--<a href="about-us.html">About Us</a>-->
+             <?php echo $this->Html->link(
+                  'About Us',
+                  '/about',
+                  array(
+                      'controller' => 'pages',
+                      'action' => 'about',
+                  )
+              );?>
+            </li>
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-		
+
     </header><!--/header-->
 
     <section id="about-us">
@@ -188,10 +183,26 @@
 			<div class="center wow fadeInDown">
 				<h2>Bills</h2>
 			</div>
-			
+            <div class="left content"
+                <ul>
+                    <li><h3>PROPOSITION 1</h3>
+                        <p>Shall the Board of Education of the Sturgeon R-V School District, Missouri, borrow money in the amount of Two Million Dollars ($2,000,000), resulting in no estimated increase to the debt service property tax levy, for the purpose of providing funds for the construction, equipping, and furnishing of additional classrooms and a new retrofit stage at the High School campus; to complete secure entrance modifications at the High School; installation of all-weather track; to acquire and install technology infrastructure and equipment at the Middle School and High School; to complete renovation, remodeling and repair improvements to the existing facilities of the District including, without limitation, renovate Middle School locker rooms, upgrade Middle School lockers, replace flooring, update lighting, renovate restrooms; and issue bonds for the payment thereof? If this proposition is approved, the adjusted debt service levy of the School District is estimated to remain unchanged at $1.27 per one hundred dollars of assessed valuation of real and personal property.</p>
+                        </li>
+                        <li><h3>PROPOSITION 1</h3>Shall the City of Columbia, Missouri increase the general property tax rate of the City by $0.30 per $100.00 of assessed valuation for the sole purpose of funding an increase in staffing and operations of the police and fire departments of the City? The increase would be phased in over a period of five years.</li>
+                        <li><h3>PROPOSITION 2</h3>Shall the City of Columbia, Missouri replace the current development charge for construction of collector and arterial streets of $0.50 per square foot of total floor area of new construction with a development charge for construction of collector and arterial streets as follows:
+                                Residential - a maximum of $1.00 per square foot of total floor area of new construction; and
+                                Non-residential Low Impact - a maximum of $1.50 per square foot of total floor area of new construction; and
+                                Non-residential High Impact - a maximum of $2.00 per square foot of total floor area of new construction.
+                        “Non-residential Low Impact” shall be defined as a trip generation rate of less than 3 trips per 1,000 square feet based on the weekday p.m. peak hour for non-residential land uses as set forth in the most recent edition of Trip Generation, a manual published by the Institute of Transportation Engineers;
+                        “Non-residential High Impact” shall be defined as a trip generation rate of 3 trips or more per 1,000 square feet based on the weekday p.m. peak hour for non-residential land uses as set forth in the most recent edition of Trip Generation, a manual published by the Institute of Transportation Engineers?
+                        The increase would be phased in over a period of three (3) years.</li>
+                    <li><h3>NOTICE OF SPECIAL ELECTION</h3><p>Shall the number of Directors of the Board of Directors of the Southern Boone County Fire Protection District be increased from 3 to 5 members?</p></li>
+                </ul>
+        </div>
+
 		</div><!--/.container-->
     </section><!--/about-us-->
-	
+
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
@@ -199,15 +210,15 @@
                     <div class="widget">
                         <h3>Company</h3>
                         <ul>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="about">About us</a></li>
                             <li><a href="#">We are hiring</a></li>
                             <li><a href="#">Meet the team</a></li>
                             <li><a href="#">Copyright</a></li>
                             <li><a href="#">Terms of use</a></li>
                             <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="contact_us">Contact us</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -215,16 +226,16 @@
                         <h3>Support</h3>
                         <ul>
                             <li><a href="#">Faq</a></li>
-                            <li><a href="#">Discussion</a></li>
+                            <li><a href="discussion">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!-- 
+<!--
                             <li><a href="#">Refund policy</a></li>
                             <li><a href="#">Ticket system</a></li>
                             <li><a href="#">Billing system</a></li>
  -->
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -232,9 +243,9 @@
                         <h3>Politicians</h3>
                         <ul>
                             <li><a href="#">Local Representatives</a></li>
-                            <li><a href="#">Contact Politician</a></li>
+                            <li><a href="contact_politician">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!-- 
+                           <!--
  <li><a href="#">Development</a></li>
                             <li><a href="#">Email Marketing</a></li>
                             <li><a href="#">Plugin Development</a></li>
@@ -242,7 +253,7 @@
  -->
 
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -257,7 +268,7 @@
                             <li><a href="#">Ullamco</a></li>
                             <li><a href="#">Laboris</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
             </div>
         </div>
@@ -271,25 +282,21 @@
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
                         <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="contact_us">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer><!--/#footer-->
-    
 
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript">
-        $('.carousel').carousel()
-    </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/bootstrap.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.prettyPhoto.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.isotope.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/main.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/wow.min.js"></script>
 </body>
 </html>
