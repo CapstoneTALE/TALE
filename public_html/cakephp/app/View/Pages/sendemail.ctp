@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Calendar | Political Visions</title>
-	
+    <title>Email Sent | Political Visions</title>
+
 	<!-- core CSS -->
-   <!-- 
+   <!--
  <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -16,11 +16,11 @@
 	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
  -->
-	
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -42,7 +42,7 @@
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
@@ -67,61 +67,51 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><!--<a href="index.ctp">Home</a>-->
                         <?php echo $this->Html->link(
-    						'Home',
-    						'/index',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'index',
-    						)
-						);?>
-                        </li>
-                        <li><!--<a href="about-us.html">About Us</a>-->
-                         <?php echo $this->Html->link(
-    						'About Us',
-    						'/about',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'about',
-    						)
-						);?>
+                'Home',
+                '/index',
+                array(
+                    'controller' => 'pages',
+                    'action' => 'index',
+                )
+            );?>
                         </li>
                         <li><!--<a href="discussion.ctp">Discussion</a>-->
                         <?php echo $this->Html->link(
-    						'Discussion',
-    						'/discussion',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'discussion',
-    						)
-						);?>
+                'Discussion',
+                '/discussion',
+                array(
+                    'controller' => 'pages',
+                    'action' => 'discussion',
+                )
+            );?>
                         </li>
                         <li><!--<a href="bills.ctp">Bills</a>-->
                          <?php echo $this->Html->link(
-    						'Bills',
-    						'/bills',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'bills',
-    						)
-						);?>
-						</li>
+                'Bills',
+                '/bills',
+                array(
+                    'controller' => 'pages',
+                    'action' => 'bills',
+                )
+            );?>
+            </li>
                         <li><!--<a href="calendar.ctp">Calendar</a>-->
                          <?php echo $this->Html->link(
-    						'Calendar',
-    						'/calendar',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'calendar',
-    						)
-						);?>
-						</li>
+                'Calendar',
+                '/calendar',
+                array(
+                    'controller' => 'pages',
+                    'action' => 'calendar',
+                )
+            );?>
+            </li>
                         <!--<li><a href="services.html">Services</a></li>-->
                         <!--<li><a href="portfolio.html">Portfolio</a></li>-->
                         <!--<li class="dropdown">
@@ -133,141 +123,166 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li class="active"><!--<a href="contact-us.html">Contact</a>-->
-                         <?php echo $this->Html->link(
-    						'Contact Us',
-    						'/contact',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'contact',
-    						)
-						);?>
-                        </li>
-                        <li>
-                        <?php echo $this->Html->link(
-    						'Login',
-    						'/login',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'login',
-    						)
-						);?>
-                        </li>                       
+                        <li class="dropdown">
+                          <?php echo $this->Html->link(
+                            //$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
+                  'Contact',
+                  '#',
+                   array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown')
+              );
+                          ?>
+              <ul class="dropdown-menu">
+                <li class="active"><!--<a href="contact_us">Contact Us</a>-->
+                 <?php echo $this->Html->link(
+                  'Contact Us',
+                  '/contact_us',
+                  array(
+                    'controller' => 'pages',
+                    'action' => 'contact_us',
+                  )
+                );?>
+                </li>
+                <li><!--<a href="contact_politician">Contact Politicain</a>-->
+                 <?php echo $this->Html->link(
+                  'Contact Politician',
+                  '/contact_politician',
+                  array(
+                    'controller' => 'pages',
+                    'action' => 'contact_politician',
+                  )
+                );?>
+                </li>
+              </ul>
+            </li>
+            <li><!--<a href="about-us.html">About Us</a>-->
+             <?php echo $this->Html->link(
+                  'About Us',
+                  '/about',
+                  array(
+                      'controller' => 'pages',
+                      'action' => 'about',
+                  )
+              );?>
+            </li>
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-		
-    </header><!--/header-->
+
+  </header><!--/header-->
 
 <!--Start Here for Page Creations-->
     <section>
         <div class="container">
 			<div class="center wow fadeInDown">
-				<h2>Example Text Header</h2>
+        <br>
+        <h2>Thank you for you message! Your message has been delivered</h2>
 			</div>
+      <?php echo $this->Form->create('Contact', array('action' => 'index')); ?>
+      <?php echo $this->Form->input('name'); ?>
+      <?php echo $this->Form->input('email'); ?>
+      <?php echo $this->Form->input('subject'); ?>
+      <?php echo $this->Form->input('message'); ?>
+      <?php echo $this->Form->submit(); ?>
+      <?php echo $this->Form->end(); ?>
 		</div><!--/.container-->
     </section>
 <!--End Here for Page Creations-->
-	
-    <section id="bottom">
-        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">We are hiring</a></li>
-                            <li><a href="#">Meet the team</a></li>
-                            <li><a href="#">Copyright</a></li>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Discussion</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#">Documentation</a></li>
-<!-- 
-                            <li><a href="#">Refund policy</a></li>
-                            <li><a href="#">Ticket system</a></li>
-                            <li><a href="#">Billing system</a></li>
- -->
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Politicians</h3>
-                        <ul>
-                            <li><a href="#">Local Representatives</a></li>
-                            <li><a href="#">Contact Politician</a></li>
-                            <li><a href="#">Recent News</a></li>
-                           <!-- 
- <li><a href="#">Development</a></li>
-                            <li><a href="#">Email Marketing</a></li>
-                            <li><a href="#">Plugin Development</a></li>
-                            <li><a href="#">Article Writing</a></li>
- -->
-
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Our Partners and Supporters</h3>
-                        <ul>
-                            <li><a href="#">Adipisicing Elit</a></li>
-                            <li><a href="#">Eiusmod</a></li>
-                            <li><a href="#">Tempor</a></li>
-                            <li><a href="#">Veniam</a></li>
-                            <li><a href="#">Exercitation</a></li>
-                            <li><a href="#">Ullamco</a></li>
-                            <li><a href="#">Laboris</a></li>
-                        </ul>
-                    </div>    
-                </div><!--/.col-md-3-->
-            </div>
-        </div>
-    </section><!--/#bottom-->
-
-    <footer id="footer" class="midnight-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2015 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">TALE</a>. All Rights Reserved.
-                </div>
-                <div class="col-sm-6">
-                    <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
+<section id="bottom">
+    <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="widget">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about">About us</a></li>
+                        <li><a href="#">We are hiring</a></li>
+                        <li><a href="#">Meet the team</a></li>
+                        <li><a href="#">Copyright</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="contact_us">Contact us</a></li>
                     </ul>
                 </div>
+            </div><!--/.col-md-3-->
+
+            <div class="col-md-3 col-sm-6">
+                <div class="widget">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="discussion">Discussion</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Documentation</a></li>
+<!--
+                        <li><a href="#">Refund policy</a></li>
+                        <li><a href="#">Ticket system</a></li>
+                        <li><a href="#">Billing system</a></li>
+-->
+                    </ul>
+                </div>
+            </div><!--/.col-md-3-->
+
+            <div class="col-md-3 col-sm-6">
+                <div class="widget">
+                    <h3>Politicians</h3>
+                    <ul>
+                        <li><a href="#">Local Representatives</a></li>
+                        <li><a href="contact_politician">Contact Politician</a></li>
+                        <li><a href="#">Recent News</a></li>
+                       <!--
+<li><a href="#">Development</a></li>
+                        <li><a href="#">Email Marketing</a></li>
+                        <li><a href="#">Plugin Development</a></li>
+                        <li><a href="#">Article Writing</a></li>
+-->
+
+                    </ul>
+                </div>
+            </div><!--/.col-md-3-->
+
+            <div class="col-md-3 col-sm-6">
+                <div class="widget">
+                    <h3>Our Partners and Supporters</h3>
+                    <ul>
+                        <li><a href="#">Adipisicing Elit</a></li>
+                        <li><a href="#">Eiusmod</a></li>
+                        <li><a href="#">Tempor</a></li>
+                        <li><a href="#">Veniam</a></li>
+                        <li><a href="#">Exercitation</a></li>
+                        <li><a href="#">Ullamco</a></li>
+                        <li><a href="#">Laboris</a></li>
+                    </ul>
+                </div>
+            </div><!--/.col-md-3-->
+        </div>
+    </div>
+</section><!--/#bottom-->
+
+<footer id="footer" class="midnight-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                &copy; 2015 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">TALE</a>. All Rights Reserved.
+            </div>
+            <div class="col-sm-6">
+                <ul class="pull-right">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="contact_us">Contact Us</a></li>
+                </ul>
             </div>
         </div>
-    </footer><!--/#footer-->
-    
+    </div>
+</footer><!--/#footer-->
 
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript">
-        $('.carousel').carousel()
-    </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script>
+<script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.js"></script>
+<script src="<?php echo $this->webroot; ?>/app/webroot/js/bootstrap.min.js"></script>
+<script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.prettyPhoto.js"></script>
+<script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.isotope.min.js"></script>
+<script src="<?php echo $this->webroot; ?>/app/webroot/js/main.js"></script>
+<script src="<?php echo $this->webroot; ?>/app/webroot/js/wow.min.js"></script>
 </body>
-</html> 
+</html>

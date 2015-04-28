@@ -1,6 +1,6 @@
 <?php
-//App::uses('AppModel', 'Model');
-App::uses('AuthComponent', 'Controller/Component');
+App::uses('AppModel', 'Model');
+//App::uses('AuthComponent', 'Controller/Component');
 //App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class User extends AppModel {
@@ -34,16 +34,6 @@ class User extends AppModel {
                 'message' => 'A password is required'
             )
         ),
-        /*'password_confirm' => array(
-            'required' => array(
-                'rule' => array('notEmpty'),
-                'message' => 'Please confirm your password'
-            ),
-             'equaltofield' => array(
-                'rule' => array('equaltofield','password'),
-                'message' => 'Passwords must match.'
-            )
-        ),*/
         'first_name' => array(
             'required' => array(
                 'rule' => array('notEmpty'),
@@ -51,7 +41,7 @@ class User extends AppModel {
             ),
             'min_length' => array(
                 'rule' => array('minLength', '2'),
-                'message' => 'Password must have a mimimum of 2 characters'
+                'message' => 'First name must have a mimimum of 2 characters'
             )
         ),
         'last_name' => array(
@@ -61,7 +51,7 @@ class User extends AppModel {
             ),
             'min_length' => array(
                 'rule' => array('minLength', '2'),
-                'message' => 'Password must have a mimimum of 2 characters'
+                'message' => 'Last name must have a mimimum of 2 characters'
             )
         ),
         'email' => array(

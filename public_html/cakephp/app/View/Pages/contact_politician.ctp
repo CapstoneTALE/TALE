@@ -171,8 +171,10 @@
 
     <section id="contact-page">
         <div class="container">
-            <div class="center"
-             <h1>Politicians</h1>
+          <div class="center">
+          <h2>Map</h2>
+          <iframe src="https://www.google.com/maps/d/embed?mid=zGu-3sQbetnw.kl7r4Xc4YdUU" width="640" height="480"></iframe>
+             <h2>Politicians</h2>
          </div>
              <h3>FOR STATE AUDITOR</h3>
              <ul>

@@ -7,13 +7,15 @@
     <meta name="author" content="">
     <title>Contact Us | Political Visions</title>
 
-    <!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- core CSS -->
+   <!--
+ <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+ -->
 
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -236,49 +238,20 @@
             </div>
             <div class="row contact-wrap">
                 <div class="status alert alert-success" style="display: none"></div>
-                <?php echo $this->Form->create(null, array(
-                    'url' => array('controller' => 'pages', 'action' => 'sendemail'))
-                );
-                ?>
-                <!-- <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.ctp"> -->
-                    <div class="col-sm-5 col-sm-offset-1">
-                        <div class="form-group">
-                            <label>Name *</label>
-                            <input type="text" name="name" class="form-control" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label>Email *</label>
-                            <input type="email" name="email" class="form-control" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label>Phone</label>
-                            <input type="number" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Company Name</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-sm-5">
-                        <div class="form-group">
-                            <label>Subject *</label>
-                            <input type="text" name="subject" class="form-control" required="required">
-                        </div>
-                        <div class="form-group">
-                            <label>Message *</label>
-                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Submit Message</button>
-                        </div>
-                    </div>
-                </form>
+                <?php echo $this->Form->create('Contact', array('action' => 'index')); ?>
+                <?php echo $this->Form->input('name'); ?>
+                <?php echo $this->Form->input('email'); ?>
+                <?php echo $this->Form->input('subject'); ?>
+                <?php echo $this->Form->input('message'); ?>
+                <?php echo $this->Form->submit(); ?>
+                <?php echo $this->Form->end(); ?>
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#contact-page-->
 
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <br>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">

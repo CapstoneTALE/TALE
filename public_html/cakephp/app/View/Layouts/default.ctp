@@ -49,10 +49,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     echo $this->Html->css('prettyPhoto');
     echo $this->Html->css('main');
     echo $this->Html->css('responsive');
-		echo $this->Html->meta('icon');
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
+    echo $this->Html->meta('icon');
+    echo $this->fetch('meta');
+    echo $this->fetch('css');
+    echo $this->fetch('script');
   ?>
   <!-- icons -->
   <?php
@@ -69,9 +69,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body data-spy="scroll" data-target=".subnav" data-offset="50">
   <div id="container">
-		<div id="content">
-			<?php echo $this->fetch('content'); ?>
-		</div>
+    <div id="content">
+      <?php echo $this->fetch('content'); ?>
+    </div>
   <div id="row">
   </div>
   </div>

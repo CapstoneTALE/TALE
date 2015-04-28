@@ -9,9 +9,7 @@ class UsersController extends AppController {
 
     public function beforeFilter() {
         parent::beforeFilter();
-        //$this->Auth->allow('login', 'add');
         $this->Auth->allow('*');
-        $this->Auth->userModel = 'User';
     }
 
     public function index() {
@@ -72,7 +70,7 @@ class UsersController extends AppController {
           $this->Session->setFlash(__('User was not deleted'));
           return $this->redirect(array('action' => 'index'));
       }
-    
+
 
     public function getUsernameById($id) {
       $data = $this->User->findById($id);

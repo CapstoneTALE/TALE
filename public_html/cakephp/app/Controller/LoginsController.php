@@ -34,6 +34,6 @@ class LoginsController extends AppController {
 
   public function beforeFilter() {
       parent::beforeFilter();
-      $this->Auth->allow('login', 'add');
+      //$this->Auth->allow('login', 'add');
     }
 }

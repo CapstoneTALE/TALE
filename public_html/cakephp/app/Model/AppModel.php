@@ -20,6 +20,9 @@
  */
 
 App::uses('Model', 'Model');
+//App::uses('ConnectionManager', 'Model');
+//$dataSource = ConnectionManager::getDataSource('default');
+//$username = $dataSource->config['login'];
 
 /**
  * Application model for Cake.
@@ -31,7 +34,8 @@ App::uses('Model', 'Model');
  */
 class AppModel extends Model {
   public $recursive = -1;
-  
+  //public $useDbConfig = 'default';
+
   function find($conditions = null, $fields = array(), $order = null, $recursive = null) {
         $doQuery = true;
         // check if we want the cache
