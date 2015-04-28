@@ -238,10 +238,6 @@
             </div>
             <div class="row contact-wrap">
                 <div class="status alert alert-success" style="display: none"></div>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD:public_html/cakephp/app/View/Pages/contact.ctp
->>>>>>> master
                 <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
                     <div class="col-sm-5 col-sm-offset-1">
                         <div class="form-group">
@@ -275,6 +271,7 @@
                         </div>
                     </div>
                 </form> 
+<!-- 
 =======
                 <?php echo $this->Form->create('Contact', array('action' => 'index')); ?>
                 <?php echo $this->Form->input('name'); ?>
@@ -284,6 +281,7 @@
                 <?php echo $this->Form->submit(); ?>
                 <?php echo $this->Form->end(); ?>
 >>>>>>> AD_Branch:public_html/cakephp/app/View/Pages/contact_us.ctp
+ -->
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#contact-page-->
