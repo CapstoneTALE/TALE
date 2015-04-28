@@ -53,7 +53,6 @@
 	Router::connect('/discussion', array('controller' => 'pages', 'action' => 'display', 'discussion'));
 	Router::connect('/login', array('controller' => 'pages', 'action' => 'display', 'login'));
 	Router::connect('/signup', array('controller' => 'pages', 'action' => 'display', 'signup'));
-	Router::connect('/sendemail', array('controller' => 'pages', 'action' => 'display', 'sendemail'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
