@@ -16,6 +16,9 @@
 	  <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
  -->
 	
 =======
