@@ -162,8 +162,7 @@
 								</li>
 							</ul>
 						</li>	 
-                        <!-- 
-<li>
+                        <li>
                         <?php echo $this->Html->link(
     						'Login',
     						'/login',
@@ -172,8 +171,7 @@
         						'action' => 'login',
     						)
 						);?>
-                        </li>
- -->                      
+                        </li>                      
                     </ul>
                 </div>
             </div><!--/.container-->
