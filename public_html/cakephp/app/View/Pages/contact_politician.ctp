@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Contact Us | Political Visions</title>
-    
+
     <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -14,11 +14,11 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -40,7 +40,7 @@
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
@@ -65,9 +65,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><!--<a href="index.ctp">Home</a>-->
@@ -77,16 +77,6 @@
     						array(
         						'controller' => 'pages',
         						'action' => 'index',
-    						)
-						);?>
-                        </li>
-                        <li><!--<a href="about-us.html">About Us</a>-->
-                         <?php echo $this->Html->link(
-    						'About Us',
-    						'/about',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'about',
     						)
 						);?>
                         </li>
@@ -131,7 +121,7 @@
                                 <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>-->
-                        <li class="active dropdown">
+                        <li class="dropdown">
                         	<?php echo $this->Html->link(
                         		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
     							'Contact',
@@ -150,7 +140,7 @@
 									)
 								);?>
 								</li>
-								<li><!--<a href="contact_politician">Contact Politicain</a>-->
+								<li class="active"><!--<a href="contact_politician">Contact Politicain</a>-->
 								 <?php echo $this->Html->link(
 									'Contact Politician',
 									'/contact_politician',
@@ -161,27 +151,64 @@
 								);?>
 								</li>
 							</ul>
-						</li>	 
-                        <li>
-                        <?php echo $this->Html->link(
-    						'Login',
-    						'/login',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'login',
-    						)
-						);?>
-                        </li>                      
+						</li>
+            <li><!--<a href="about-us.html">About Us</a>-->
+             <?php echo $this->Html->link(
+                  'About Us',
+                  '/about',
+                  array(
+                      'controller' => 'pages',
+                      'action' => 'about',
+                  )
+              );?>
+            </li>
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-		
+
     </header><!--/header-->
 
     <section id="contact-page">
         <div class="container">
-            
+          <div class="center">
+          <h2>Map</h2>
+          <iframe src="https://www.google.com/maps/d/embed?mid=zGu-3sQbetnw.kl7r4Xc4YdUU" width="640" height="480"></iframe>
+             <h2>Politicians</h2>
+         </div>
+             <h3>FOR STATE AUDITOR</h3>
+             <ul>
+                <li>TOM SCHWEICH<br>
+                REPUBLICAN PARTY</li>
+                <li>SEAN O’TOOLE<br>
+                LIBERTARIAN PARTY</li>
+                <li>RODNEY FARTHING<br>
+                CONSTITUTION PARTY</li>
+            </ul>
+            <h3>FOR UNITED STATES REPRESENTATIVE (DISTRICT 4)</h3>
+            <ul>
+                <li>NATE IRVIN<br>
+                DEMOCRATIC PARTY</li>
+                <li>VICKY HARTZLER<br>
+                REPUBLICAN PARTY</li>
+                <li>HERSCHEL L. YOUNG<br>
+                LIBERTARIAN PARTY</li>
+             </ul>
+             <h3>FOR STATE REPRESENTATIVE (DISTRICT 44)</h3>
+             <ul>
+                 <li>THOMAS (TOM) PAULEY<br>
+                    DEMOCRATIC PARTY</li>
+                 <li>CALEB ROWDEN<br>
+                    REPUBLICAN PARTY</li>
+             </ul>
+             <ul>
+                <h3>FOR STATE REPRESENTATIVE (DISTRICT 45)</h3>
+                 <li>KIP KENDRICK<br>
+                    DEMOCRATIC PARTY</li>
+             </ul>
+
+
+
         </div><!--/.container-->
     </section><!--/#contact-page-->
 
@@ -192,15 +219,15 @@
                     <div class="widget">
                         <h3>Company</h3>
                         <ul>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="about">About us</a></li>
                             <li><a href="#">We are hiring</a></li>
                             <li><a href="#">Meet the team</a></li>
                             <li><a href="#">Copyright</a></li>
                             <li><a href="#">Terms of use</a></li>
                             <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="contact_us">Contact us</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -208,16 +235,16 @@
                         <h3>Support</h3>
                         <ul>
                             <li><a href="#">Faq</a></li>
-                            <li><a href="#">Discussion</a></li>
+                            <li><a href="discussion">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!-- 
+<!--
                             <li><a href="#">Refund policy</a></li>
                             <li><a href="#">Ticket system</a></li>
                             <li><a href="#">Billing system</a></li>
  -->
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -225,9 +252,9 @@
                         <h3>Politicians</h3>
                         <ul>
                             <li><a href="#">Local Representatives</a></li>
-                            <li><a href="#">Contact Politician</a></li>
+                            <li><a href="contact_politician">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!-- 
+                           <!--
  <li><a href="#">Development</a></li>
                             <li><a href="#">Email Marketing</a></li>
                             <li><a href="#">Plugin Development</a></li>
@@ -235,7 +262,7 @@
  -->
 
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -250,7 +277,7 @@
                             <li><a href="#">Ullamco</a></li>
                             <li><a href="#">Laboris</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
             </div>
         </div>
@@ -264,10 +291,10 @@
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
                         <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="contact_us">Contact Us</a></li>
                     </ul>
                 </div>
             </div>

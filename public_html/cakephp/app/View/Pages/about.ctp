@@ -6,19 +6,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>About Us | Political Visions</title>
-	
+
 	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+	  <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-	
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -40,7 +40,7 @@
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
@@ -65,9 +65,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index"><img src="<?php echo $this->webroot; ?>/app/webroot/img/PVlogo.png" alt="logo"></a>
                 </div>
-				
+
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li><!--<a href="index.ctp">Home</a>-->
@@ -77,16 +77,6 @@
     						array(
         						'controller' => 'pages',
         						'action' => 'index',
-    						)
-						);?>
-                        </li>
-                        <li class="active"><!--<a href="about-us.html">About Us</a>-->
-                         <?php echo $this->Html->link(
-    						'About Us',
-    						'/about',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'about',
     						)
 						);?>
                         </li>
@@ -161,22 +151,22 @@
 								);?>
 								</li>
 							</ul>
-						</li>	 
-                        <li>
-                        <?php echo $this->Html->link(
-    						'Login',
-    						'/login',
-    						array(
-        						'controller' => 'pages',
-        						'action' => 'login',
-    						)
-						);?>
-                        </li>                       
+						</li>
+            <li class="active"><!--<a href="about-us.html">About Us</a>-->
+             <?php echo $this->Html->link(
+                  'About Us',
+                  '/about',
+                  array(
+                      'controller' => 'pages',
+                      'action' => 'about',
+                  )
+              );?>
+            </li>
                     </ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-		
+
     </header><!--/header-->
 
     <section id="about-us">
@@ -186,7 +176,7 @@
 				<p class="lead">	With only 37% of eligible voters voting and 67% of those voters being over the age of 40 voting has in effect been abandoned by young people. This is concerning for a plethora of reasons most daunting of all being that the opinions and desires of a vast majority of the people occupying America and the provinces, towns, and cities that constitute it. This disconnect is becoming alarmingly apparent in the way that current political events are reported and handled and the public’s general contempt for the actions of the government has taken. Therefore there must be some system built to encourage and enlighten general voters on why their votes are important and what and who they are voting for.
 This is the application that TALE intends to create. An application to not only enlighten each community that it is introduced to as to who their politicians are and what they say they represent, but also the past actions of those politicians and how they have voted in the past and what those votes mean as far as their true political desires.</p>
 			</div>
-			
+
 			<!-- about us slider -->
 			<div id="about-slider">
 				<div id="carousel-slider" class="carousel slide" data-ride="carousel">
@@ -199,77 +189,77 @@ This is the application that TALE intends to create. An application to not only 
 
 					<div class="carousel-inner">
 						<div class="item active">
-							<img src="<?php echo $this->webroot; ?>/app/webroot/img/slider/VoteAndBeAPartOfHistory.jpg" class="img-responsive" alt=""> 
+							<img src="<?php echo $this->webroot; ?>/app/webroot/img/slider/VoteAndBeAPartOfHistory.jpg" class="img-responsive" alt="">
 					   </div>
 					   <div class="item">
-							<img src="images/slider_one.jpg" class="img-responsive" alt=""> 
-					   </div> 
+							<img src="images/slider_one.jpg" class="img-responsive" alt="">
+					   </div>
 					   <div class="item">
-							<img src="images/slider_one.jpg" class="img-responsive" alt=""> 
-					   </div> 
+							<img src="images/slider_one.jpg" class="img-responsive" alt="">
+					   </div>
 					</div>
-					
+
 					<a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
-						<i class="fa fa-angle-left"></i> 
+						<i class="fa fa-angle-left"></i>
 					</a>
-					
+
 					<a class=" right carousel-control hidden-xs"href="#carousel-slider" data-slide="next">
-						<i class="fa fa-angle-right"></i> 
+						<i class="fa fa-angle-right"></i>
 					</a>
 				</div> <!--/#carousel-slider-->
 			</div><!--/#about-slider-->
-			
-			
+
+
 			<!-- Our Skill -->
 			<!--<div class="skill-wrap clearfix">
-			
+
 				<div class="center wow fadeInDown">
 					<h2>Our Skill</h2>
 					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
 				</div>
-				
+
 				<div class="row">
-		
+
 					<div class="col-sm-3">
 						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-							<div class="joomla-skill">                                   
+							<div class="joomla-skill">
 								<p><em>85%</em></p>
 								<p>Joomla</p>
 							</div>
 						</div>
 					</div>
-					
+
 					 <div class="col-sm-3">
 						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-							<div class="html-skill">                                  
+							<div class="html-skill">
 								<p><em>95%</em></p>
 								<p>HTML</p>
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="col-sm-3">
 						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-							<div class="css-skill">                                    
+							<div class="css-skill">
 								<p><em>80%</em></p>
 								<p>CSS</p>
 							</div>
 						</div>
 					</div>
-					
+
 					 <div class="col-sm-3">
 						<div class="sinlge-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms">
 							<div class="wp-skill">
 								<p><em>90%</em></p>
-								<p>Wordpress</p>                                     
+								<p>Wordpress</p>
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
-	
+
             </div>--><!--/.our-skill-->
-			
+
 
 			<!-- our-team -->
 			<div class="team">
@@ -279,7 +269,7 @@ This is the application that TALE intends to create. An application to not only 
 				</div>
 
 				<div class="row clearfix">
-					<div class="col-md-4 col-sm-6">	
+					<div class="col-md-4 col-sm-6">
 						<div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 							<div class="media">
 								<div class="pull-left">
@@ -294,10 +284,10 @@ This is the application that TALE intends to create. An application to not only 
 										<li class="btn"><a href="#">Ux</a></li>
 										<li class="btn"><a href="#">Photoshop</a></li>
 									</ul>
-									
+
 									<ul class="social_icons">
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 									</ul>
 								</div>
@@ -305,9 +295,9 @@ This is the application that TALE intends to create. An application to not only 
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
 						</div>
 					</div><!--/.col-lg-4 -->
-					
-					
-					<div class="col-md-4 col-sm-6 col-md-offset-2">	
+
+
+					<div class="col-md-4 col-sm-6 col-md-offset-2">
 						<div class="single-profile-top wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 							<div class="media">
 								<div class="pull-left">
@@ -324,14 +314,14 @@ This is the application that TALE intends to create. An application to not only 
 									</ul>
 									<ul class="social_icons">
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 									</ul>
 								</div>
 							</div><!--/.media -->
 							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
 						</div>
-					</div><!--/.col-lg-4 -->					
+					</div><!--/.col-lg-4 -->
 				</div> <!--/.row -->
 				<div class="row team-bar">
 					<div class="first-one-arrow hidden-xs">
@@ -349,10 +339,10 @@ This is the application that TALE intends to create. An application to not only 
 					<div class="fourth-arrow hidden-xs">
 						<hr> <i class="fa fa-angle-down"></i>
 					</div>
-				</div> <!--skill_border-->       
+				</div> <!--skill_border-->
 
-				<div class="row clearfix">   
-					<div class="col-md-4 col-sm-6 col-md-offset-2">	
+				<div class="row clearfix">
+					<div class="col-md-4 col-sm-6 col-md-offset-2">
 						<div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
 							<div class="media">
 								<div class="pull-left">
@@ -370,7 +360,7 @@ This is the application that TALE intends to create. An application to not only 
 									</ul>
 									<ul class="social_icons">
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 									</ul>
 								</div>
@@ -382,7 +372,7 @@ This is the application that TALE intends to create. An application to not only 
 						<div class="single-profile-bottom wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
 							<div class="media">
 								<div class="pull-left">
-									<a href="#"><img class="media-object" src="images/man4.jpg" alt=""></a>
+									<a href="#"><img class="media-object" height="100" width="100" src="<?php echo $this->webroot; ?>/app/webroot/img/Tyron.jpg" alt=""></a>
 								</div>
 								<div class="media-body">
 									<h4>Tyron Allen</h4>
@@ -395,7 +385,7 @@ This is the application that TALE intends to create. An application to not only 
 									</ul>
 									<ul class="social_icons">
 										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 									</ul>
 								</div>
@@ -407,7 +397,7 @@ This is the application that TALE intends to create. An application to not only 
 			</div><!--section-->
 		</div><!--/.container-->
     </section><!--/about-us-->
-	
+
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
@@ -415,15 +405,15 @@ This is the application that TALE intends to create. An application to not only 
                     <div class="widget">
                         <h3>Company</h3>
                         <ul>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="about">About us</a></li>
                             <li><a href="#">We are hiring</a></li>
                             <li><a href="#">Meet the team</a></li>
                             <li><a href="#">Copyright</a></li>
                             <li><a href="#">Terms of use</a></li>
                             <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="contact_us">Contact us</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -431,16 +421,16 @@ This is the application that TALE intends to create. An application to not only 
                         <h3>Support</h3>
                         <ul>
                             <li><a href="#">Faq</a></li>
-                            <li><a href="#">Discussion</a></li>
+                            <li><a href="discussion">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!-- 
+<!--
                             <li><a href="#">Refund policy</a></li>
                             <li><a href="#">Ticket system</a></li>
                             <li><a href="#">Billing system</a></li>
  -->
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -448,9 +438,9 @@ This is the application that TALE intends to create. An application to not only 
                         <h3>Politicians</h3>
                         <ul>
                             <li><a href="#">Local Representatives</a></li>
-                            <li><a href="#">Contact Politician</a></li>
+                            <li><a href="contact_politician">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!-- 
+                           <!--
  <li><a href="#">Development</a></li>
                             <li><a href="#">Email Marketing</a></li>
                             <li><a href="#">Plugin Development</a></li>
@@ -458,7 +448,7 @@ This is the application that TALE intends to create. An application to not only 
  -->
 
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -473,7 +463,7 @@ This is the application that TALE intends to create. An application to not only 
                             <li><a href="#">Ullamco</a></li>
                             <li><a href="#">Laboris</a></li>
                         </ul>
-                    </div>    
+                    </div>
                 </div><!--/.col-md-3-->
             </div>
         </div>
@@ -487,25 +477,21 @@ This is the application that TALE intends to create. An application to not only 
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
                         <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="contact_us">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer><!--/#footer-->
-    
 
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript">
-        $('.carousel').carousel()
-    </script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/bootstrap.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.prettyPhoto.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/jquery.isotope.min.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/main.js"></script>
+    <script src="<?php echo $this->webroot; ?>/app/webroot/js/wow.min.js"></script>
 </body>
 </html>

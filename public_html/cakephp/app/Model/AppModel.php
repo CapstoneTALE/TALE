@@ -20,6 +20,9 @@
  */
 
 App::uses('Model', 'Model');
+//App::uses('ConnectionManager', 'Model');
+//$dataSource = ConnectionManager::getDataSource('default');
+//$username = $dataSource->config['login'];
 
 /**
  * Application model for Cake.
@@ -30,4 +33,32 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+  public $recursive = -1;
+  //public $useDbConfig = 'default';
+
+  function find($conditions = null, $fields = array(), $order = null, $recursive = null) {
+        $doQuery = true;
+        // check if we want the cache
+        if (!empty($fields['cache'])) {
+            $cacheConfig = null;
+            // check if we have specified a custom config
+            if (!empty($fields['cacheConfig'])) {
+                $cacheConfig = $fields['cacheConfig'];
+            }
+            $cacheName = $this->name . '-' . $fields['cache'];
+            // if so, check if the cache exists
+            $data = Cache::read($cacheName, $cacheConfig);
+            if ($data == false) {
+                $data = parent::find($conditions, $fields,
+                    $order, $recursive);
+                Cache::write($cacheName, $data, $cacheConfig);
+            }
+            $doQuery = false;
+        }
+        if ($doQuery) {
+            $data = parent::find($conditions, $fields, $order,
+                $recursive);
+        }
+        return $data;
+    }
 }
