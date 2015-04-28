@@ -21,8 +21,7 @@
     },
     "require": {
         "php": ">=5.3.0",
-        "composer/installers": "*",
-        "slywalker/boost_cake": "*"
+        "composer/installers": "*"
     },
     "suggest": {
         "twbs/bootstrap": "Bootstrap framework"
