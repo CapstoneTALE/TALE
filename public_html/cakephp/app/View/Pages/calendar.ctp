@@ -175,8 +175,10 @@
 			<div class="center wow fadeInDown">
 				<h2>Calendar</h2>
 			</div>
-
-		</div><!--/.container-->
+			<div>
+				<p class='center wow fadeInDown'>Events coming to you soon!!!</p>
+			</div>
+					</div><!--/.container-->
     </section><!--/about-us-->
 
     <section id="bottom">
