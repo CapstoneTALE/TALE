@@ -174,7 +174,7 @@
     <section id="contact-info">
         <div class="center">
             <h2>How to Reach Us?</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            <p class="lead"></p>
         </div>
         <div class="gmap-area">
             <div class="container">
@@ -251,6 +251,7 @@
 
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <br>
           <br>
             <div class="row">
                 <div class="col-md-3 col-sm-6">

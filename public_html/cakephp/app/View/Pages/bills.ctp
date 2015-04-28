@@ -196,6 +196,8 @@
 
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <br>
+          <br>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">

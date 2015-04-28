@@ -3,8 +3,8 @@
 class ContactsController extends AppController {
     var $name = 'Contact';
     var $uses = 'Contact';
-    var $helpers = array('Html', 'Form', 'Js');
-    var $components = array('Email', 'Session', 'RequestHandler');
+    var $helpers = array('Html', 'Form');
+    var $components = array('Email', 'RequestHandler');
 
 
     function index() {
@@ -20,8 +20,7 @@ class ContactsController extends AppController {
             $this->Email->send($this->data['Contact']['message']);
         }
     }
-}
-
+  }
 
 }
 ?>

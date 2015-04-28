@@ -173,7 +173,9 @@
         <div class="container">
           <div class="center">
           <h2>Map</h2>
-          <iframe src="https://www.google.com/maps/d/embed?mid=zGu-3sQbetnw.kl7r4Xc4YdUU" width="640" height="480"></iframe>
+          <div style="height:600px">
+          <iframe src="https://www.google.com/maps/d/embed?mid=zGu-3sQbetnw.kl7r4Xc4YdUU" width="100%" height="100%"></iframe>
+        </div>
              <h2>Politicians</h2>
          </div>
              <h3>FOR STATE AUDITOR</h3>
@@ -214,6 +216,8 @@
 
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <br>
+          <br>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
