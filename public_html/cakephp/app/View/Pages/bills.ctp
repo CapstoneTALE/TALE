@@ -15,15 +15,7 @@
     <link href="css/animate.min.css" rel="stylesheet">
 	  <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> master
- -->
-	
-=======
 
->>>>>>> AD_Branch
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -181,24 +173,40 @@
     <section id="about-us">
         <div class="container">
 			<div class="center wow fadeInDown">
-				<h2>Bills</h2>
-			</div>
-            <div class="left content"
-                <ul>
-                    <li><h3>PROPOSITION 1</h3>
-                        <p>Shall the Board of Education of the Sturgeon R-V School District, Missouri, borrow money in the amount of Two Million Dollars ($2,000,000), resulting in no estimated increase to the debt service property tax levy, for the purpose of providing funds for the construction, equipping, and furnishing of additional classrooms and a new retrofit stage at the High School campus; to complete secure entrance modifications at the High School; installation of all-weather track; to acquire and install technology infrastructure and equipment at the Middle School and High School; to complete renovation, remodeling and repair improvements to the existing facilities of the District including, without limitation, renovate Middle School locker rooms, upgrade Middle School lockers, replace flooring, update lighting, renovate restrooms; and issue bonds for the payment thereof? If this proposition is approved, the adjusted debt service levy of the School District is estimated to remain unchanged at $1.27 per one hundred dollars of assessed valuation of real and personal property.</p>
-                        </li>
-                        <li><h3>PROPOSITION 1</h3>Shall the City of Columbia, Missouri increase the general property tax rate of the City by $0.30 per $100.00 of assessed valuation for the sole purpose of funding an increase in staffing and operations of the police and fire departments of the City? The increase would be phased in over a period of five years.</li>
-                        <li><h3>PROPOSITION 2</h3>Shall the City of Columbia, Missouri replace the current development charge for construction of collector and arterial streets of $0.50 per square foot of total floor area of new construction with a development charge for construction of collector and arterial streets as follows:
+				<br>
+				<h2>Bills</h2>            
+				  <table class="table table-striped">
+					<thead>
+					  <tr>
+						<th>Propositions</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>Proposition 1</td>
+						<td>Shall the Board of Education of the Sturgeon R-V School District, Missouri, borrow money in the amount of Two Million Dollars ($2,000,000), resulting in no estimated increase to the debt service property tax levy, for the purpose of providing funds for the construction, equipping, and furnishing of additional classrooms and a new retrofit stage at the High School campus; to complete secure entrance modifications at the High School; installation of all-weather track; to acquire and install technology infrastructure and equipment at the Middle School and High School; to complete renovation, remodeling and repair improvements to the existing facilities of the District including, without limitation, renovate Middle School locker rooms, upgrade Middle School lockers, replace flooring, update lighting, renovate restrooms; and issue bonds for the payment thereof? If this proposition is approved, the adjusted debt service levy of the School District is estimated to remain unchanged at $1.27 per one hundred dollars of assessed valuation of real and personal property.</td>
+					  </tr>
+					  <tr>
+						<td>Proposition 1</td>
+						<td>Shall the City of Columbia, Missouri increase the general property tax rate of the City by $0.30 per $100.00 of assessed valuation for the sole purpose of funding an increase in staffing and operations of the police and fire departments of the City? The increase would be phased in over a period of five years.</td>
+					  </tr>
+					  <tr>
+						<td>Proposition 2</td>
+						<td>Shall the City of Columbia, Missouri replace the current development charge for construction of collector and arterial streets of $0.50 per square foot of total floor area of new construction with a development charge for construction of collector and arterial streets as follows:
                                 Residential - a maximum of $1.00 per square foot of total floor area of new construction; and
                                 Non-residential Low Impact - a maximum of $1.50 per square foot of total floor area of new construction; and
                                 Non-residential High Impact - a maximum of $2.00 per square foot of total floor area of new construction.
                         “Non-residential Low Impact” shall be defined as a trip generation rate of less than 3 trips per 1,000 square feet based on the weekday p.m. peak hour for non-residential land uses as set forth in the most recent edition of Trip Generation, a manual published by the Institute of Transportation Engineers;
                         “Non-residential High Impact” shall be defined as a trip generation rate of 3 trips or more per 1,000 square feet based on the weekday p.m. peak hour for non-residential land uses as set forth in the most recent edition of Trip Generation, a manual published by the Institute of Transportation Engineers?
-                        The increase would be phased in over a period of three (3) years.</li>
-                    <li><h3>NOTICE OF SPECIAL ELECTION</h3><p>Shall the number of Directors of the Board of Directors of the Southern Boone County Fire Protection District be increased from 3 to 5 members?</p></li>
-                </ul>
-        </div>
+                        The increase would be phased in over a period of three (3) years.</td>
+					  </tr>
+					  <tr>
+					  	<td>Notice of Special Election</td>
+					  	<td>Shall the number of Directors of the Board of Directors of the Southern Boone County Fire Protection District be increased from 3 to 5 members?</td>
+					  </tr>
+					</tbody>
+				  </table>
+			</div>
 
 		</div><!--/.container-->
     </section><!--/about-us-->

@@ -172,6 +172,7 @@
     <section id="about-us">
         <div class="container">
 			<div class="center wow fadeInDown">
+				<br>
 				<h2>About Political Visions</h2>
 				<p class="lead">	With only 37% of eligible voters voting and 67% of those voters being over the age of 40 voting has in effect been abandoned by young people. This is concerning for a plethora of reasons most daunting of all being that the opinions and desires of a vast majority of the people occupying America and the provinces, towns, and cities that constitute it. This disconnect is becoming alarmingly apparent in the way that current political events are reported and handled and the public’s general contempt for the actions of the government has taken. Therefore there must be some system built to encourage and enlighten general voters on why their votes are important and what and who they are voting for.
 This is the application that TALE intends to create. An application to not only enlighten each community that it is introduced to as to who their politicians are and what they say they represent, but also the past actions of those politicians and how they have voted in the past and what those votes mean as far as their true political desires.</p>
