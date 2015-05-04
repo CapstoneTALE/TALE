@@ -357,7 +357,7 @@
     <section id="middle">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 wow fadeInDown">
+                <div class="col-sm-12 wow fadeInDown">
                     <div class="skill">
                         <h2>Percentage of Voters</h2>
                         <p>Break down of what percentage of voters at each age are voting.</p>
