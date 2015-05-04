@@ -188,8 +188,8 @@ echo $this->Html->css('bootstrap.min');
                         <div class="row slide-margin">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h1 class="animation animated-item-1">Be The Change You Want To "See"</h1>
-                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+                                    <h1 class="animation animated-item-1">"Be The Change You Want To See"</h1>
+                                    <h2 class="animation animated-item-2">No change can be achieved without a spark</h2>
                                     <a class="btn-slide animation animated-item-3" href="#">Read More</a>
                                 </div>
                             </div>
@@ -265,8 +265,8 @@ echo $this->Html->css('bootstrap.min');
                     <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <i class="fa fa-bullhorn"></i>
-                            <h2>Get Involve</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                            <h2>Get Involved</h2>
+                            <h3>Find community events to get involved in</h3>
                         </div>
                     </div><!--/.col-md-4-->
 
@@ -274,7 +274,7 @@ echo $this->Html->css('bootstrap.min');
                         <div class="feature-wrap">
                             <i class="fa fa-comments"></i>
                             <h2>Contact Politicians</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                            <h3>Contact your local officials</h3>
                         </div>
                     </div><!--/.col-md-4-->
 
@@ -282,7 +282,7 @@ echo $this->Html->css('bootstrap.min');
                         <div class="feature-wrap">
                             <i class="fa fa-cloud-download"></i>
                             <h2>Recent News</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                            <h3>See all recent news</h3>
                         </div>
                     </div><!--/.col-md-4-->
 
@@ -290,7 +290,7 @@ echo $this->Html->css('bootstrap.min');
                         <div class="feature-wrap">
                             <i class="fa fa-leaf"></i>
                             <h2>Get Informed</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                            <h3>Keep up to date with local bills</h3>
                         </div>
                     </div><!--/.col-md-4-->
 
@@ -298,7 +298,7 @@ echo $this->Html->css('bootstrap.min');
                         <div class="feature-wrap">
                             <i class="fa fa-cogs"></i>
                             <h2>Election Information</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                            <h3>Find out information on officials running for office</h3>
                         </div>
                     </div><!--/.col-md-4-->
 
@@ -318,7 +318,7 @@ echo $this->Html->css('bootstrap.min');
         <div class="container">
             <div class="center wow fadeInDown">
                 <h2>In The News</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p class="lead">Keep up to date with the national news! </p>
             </div>
 
             <div class="row">
@@ -328,7 +328,7 @@ echo $this->Html->css('bootstrap.min');
                         <div class="overlay">
                             <div class="recent-work-inner">
                                 <h3><a href="#">Business theme</a> </h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <p>At MSNBC, our mission is to provide a fact-free environment as prefered by the Democrat- Socialist peoples.</p>
                                 <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
                             </div>
                         </div>
@@ -341,7 +341,7 @@ echo $this->Html->css('bootstrap.min');
                         <div class="overlay">
                             <div class="recent-work-inner">
                                 <h3><a href="#">Business theme</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <p>Our mission is to create the finest possible news product and to present hard-breaking, national, and international news, as it unfolds.</p>
                                 <a class="preview" href="images/portfolio/full/item2.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
                             </div>
                         </div>
@@ -354,7 +354,7 @@ echo $this->Html->css('bootstrap.min');
                         <div class="overlay">
                             <div class="recent-work-inner">
                                 <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <p>At Disney / ABC Television Group, our stories change lives, our technology revolutionizes media as we know it.</p>
                                 <a class="preview" href="images/portfolio/full/item3.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
                             </div>
                         </div>
@@ -367,7 +367,7 @@ echo $this->Html->css('bootstrap.min');
                         <div class="overlay">
                             <div class="recent-work-inner">
                                 <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <p>Fear mongering right wing replublican sensationalist writing</p>
                                 <a class="preview" href="images/portfolio/full/item4.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
                             </div>
                         </div>
@@ -523,7 +523,7 @@ echo $this->Html->css('bootstrap.min');
                 <div class="col-sm-6 wow fadeInDown">
                     <div class="skill">
                         <h2>Percentage of Voters</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Break down of what percentage of voters at each age are voting.</p>
 
                         <div class="progress-wrap">
                             <h3>Voting Eligible Population</h3><br>
@@ -568,7 +568,7 @@ echo $this->Html->css('bootstrap.min');
 
                 </div><!--/.col-sm-6-->
 
-                <div class="col-sm-6 wow fadeInDown">
+              <!--  <div class="col-sm-6 wow fadeInDown">
                     <div class="accordion">
                         <h2>Why Make A Difference?</h2>
                         <div class="panel-group" id="accordion1">
@@ -649,7 +649,7 @@ echo $this->Html->css('bootstrap.min');
                 </div>
 
             </div><!--/.row-->
-        </div><!--/.container-->
+        </div><!--/.container-->-->
     </section><!--/#middle-->
 
 
@@ -750,7 +750,7 @@ echo $this->Html->css('bootstrap.min');
         <div class="container">
             <div class="center wow fadeInDown">
                 <h2>Our Partners and Supporters</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p class="lead">Our sponsors help us provide an add free beautiful experience</p>
             </div>
 
             <div class="partners">
@@ -787,6 +787,8 @@ echo $this->Html->css('bootstrap.min');
 
     <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <br>
+          <br>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
