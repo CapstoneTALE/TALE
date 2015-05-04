@@ -174,7 +174,7 @@
     <section id="contact-info">
         <div class="center">
             <h2>How to Reach Us?</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            <p class="lead">Visit one of our office locations or just simply fill out the form below!</p>
         </div>
         <div class="gmap-area">
             <div class="container">

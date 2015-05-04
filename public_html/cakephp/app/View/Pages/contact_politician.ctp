@@ -171,46 +171,13 @@
 
     <section id="contact-page">
         <div class="container">
-          <div class="center">
-          <br>
-          <h2>Map</h2>
-          <iframe src="https://www.google.com/maps/d/embed?mid=zGu-3sQbetnw.kl7r4Xc4YdUU" width="640" height="480"></iframe>
-             <br>
-             <h2>Politicians</h2>
-         </div>
-             <h3>FOR STATE AUDITOR</h3>
-             <ul>
-                <li>TOM SCHWEICH<br>
-                REPUBLICAN PARTY</li>
-                <li>SEAN O’TOOLE<br>
-                LIBERTARIAN PARTY</li>
-                <li>RODNEY FARTHING<br>
-                CONSTITUTION PARTY</li>
-            </ul>
-            <h3>FOR UNITED STATES REPRESENTATIVE (DISTRICT 4)</h3>
-            <ul>
-                <li>NATE IRVIN<br>
-                DEMOCRATIC PARTY</li>
-                <li>VICKY HARTZLER<br>
-                REPUBLICAN PARTY</li>
-                <li>HERSCHEL L. YOUNG<br>
-                LIBERTARIAN PARTY</li>
-             </ul>
-             <h3>FOR STATE REPRESENTATIVE (DISTRICT 44)</h3>
-             <ul>
-                 <li>THOMAS (TOM) PAULEY<br>
-                    DEMOCRATIC PARTY</li>
-                 <li>CALEB ROWDEN<br>
-                    REPUBLICAN PARTY</li>
-             </ul>
-             <ul>
-                <h3>FOR STATE REPRESENTATIVE (DISTRICT 45)</h3>
-                 <li>KIP KENDRICK<br>
-                    DEMOCRATIC PARTY</li>
-             </ul>
-
-
-
+          	<div class="center">
+          		<br>
+          		<h2>Map</h2>
+          		<div style="height:600px">
+          			<iframe src="https://www.google.com/maps/d/embed?mid=zGu-3sQbetnw.kl7r4Xc4YdUU" width="100%" height="100%"></iframe>
+        		</div>
+         	</div>
         </div><!--/.container-->
     </section><!--/#contact-page-->
 

@@ -266,7 +266,7 @@ This is the application that TALE intends to create. An application to not only 
 			<div class="team">
 				<div class="center wow fadeInDown">
 					<h2> <br> <br>Team of Political Visions</h2>
-					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+					<p class="lead">“Transitioning Awareness Lawfully Educating”</p>
 				</div>
 
 				<div class="row clearfix">
@@ -293,7 +293,7 @@ This is the application that TALE intends to create. An application to not only 
 									</ul>
 								</div>
 							</div><!--/.media -->
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+							<p>A front end focused developer from St. Louis, Missouri</p>
 						</div>
 					</div><!--/.col-lg-4 -->
 
@@ -320,7 +320,7 @@ This is the application that TALE intends to create. An application to not only 
 									</ul>
 								</div>
 							</div><!--/.media -->
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+							<p>A front end focused developer from St. Louis, Missouri</p>
 						</div>
 					</div><!--/.col-lg-4 -->
 				</div> <!--/.row -->
@@ -366,7 +366,7 @@ This is the application that TALE intends to create. An application to not only 
 									</ul>
 								</div>
 							</div><!--/.media -->
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+							<p>A software developer focused on the backend. From Chicago Illinois</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 col-md-offset-2">
@@ -391,7 +391,7 @@ This is the application that TALE intends to create. An application to not only 
 									</ul>
 								</div>
 							</div><!--/.media -->
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+							<p>A back end focused developer from St. Louis, Missouri</p>
 						</div>
 					</div>
 				</div>	<!--/.row-->
