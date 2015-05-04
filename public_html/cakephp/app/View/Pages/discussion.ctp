@@ -153,87 +153,77 @@
     <div style="height:600px">
     	<iframe name="myframe" src="https://talediscussion.meteor.com" width="100%" height="100%" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=auto></iframe>
 	</div>
-        <section id="bottom">
-            <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget">
-                        	<br>
-                            <h3>Company</h3>
-                            <ul>
-                                <li><a href="about">About us</a></li>
-                                <li><a href="#">We are hiring</a></li>
-                                <li><a href="#">Meet the team</a></li>
-                                <li><a href="#">Copyright</a></li>
-                                <li><a href="#">Terms of use</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="contact_us">Contact us</a></li>
-                            </ul>
-                        </div>
-                    </div><!--/.col-md-3-->
-
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget">
-                        	<br>
-                            <h3>Support</h3>
-                            <ul>
-                                <li><a href="#">Faq</a></li>
-                                <li><a href="discussion">Discussion</a></li>
-                                <li><a href="#">Forum</a></li>
-                                <li><a href="#">Documentation</a></li>
-                            </ul>
-                        </div>
-                    </div><!--/.col-md-3-->
-
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget">
-                        	<br>
-                            <h3>Politicians</h3>
-                            <ul>
-                                <li><a href="#">Local Representatives</a></li>
-                                <li><a href="contact_politician">Contact Politician</a></li>
-                                <li><a href="#">Recent News</a></li>
-                            </ul>
-                        </div>
-                    </div><!--/.col-md-3-->
-
-                    <div class="col-md-3 col-sm-6">
-                        <div class="widget">
-                        	<br>
-                            <h3>Our Partners and Supporters</h3>
-                            <ul>
-                                <li><a href="#">Adipisicing Elit</a></li>
-                                <li><a href="#">Eiusmod</a></li>
-                                <li><a href="#">Tempor</a></li>
-                                <li><a href="#">Veniam</a></li>
-                                <li><a href="#">Exercitation</a></li>
-                                <li><a href="#">Ullamco</a></li>
-                                <li><a href="#">Laboris</a></li>
-                            </ul>
-                        </div>
-                    </div><!--/.col-md-3-->
-                </div>
-            </div>
-
-        </section><!--/#bottom-->
-
-        <footer id="footer" class="midnight-blue">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        &copy; 2015 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">TALE</a>. All Rights Reserved.
-                    </div>
-                    <div class="col-sm-6">
-                        <ul class="pull-right">
-                            <li><a href="index">Home</a></li>
-                            <li><a href="about">About Us</a></li>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="contact_us">Contact Us</a></li>
+	
+    <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                    	<br>
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="about">About us</a></li>
+                            <li><a href="about">Meet the team</a></li>
+                            <li><a href="contact_us">Contact us</a></li>
                         </ul>
                     </div>
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                    	<br>
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="discussion">Discussion</a></li>
+                            <li><a href="discussion">Forum</a></li>
+                        </ul>
+                    </div>
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                    	<br>
+                        <h3>Politicians</h3>
+                        <ul>
+                            <li><a href="contact_politician">Local Representatives</a></li>
+                            <li><a href="contact_politician">Contact Politician</a></li>
+                            <li><a href="discussion">Recent News</a></li>
+                        </ul>
+                    </div>
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                    	<br>
+                        <h3>Our Partners and Supporters</h3>
+                        <ul>
+                            <li><a href="http://www.gocolumbiamo.com/">City of Columbia</a></li>
+                            <li><a href="http://www.columbiatribune.com/news/politics/">Columbia Daily Tribune</a></li>
+                            <li><a href="https://www.columbiamissourian.com/stories/news/elections/">Missourian</a></li>
+                            <li><a href="http://www.showmeboone.com/clerk/">Show Me Boone</a></li>
+                    </div>
+                </div><!--/.col-md-3-->
+            </div>
+        </div>
+        <br>
+    </section><!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2015 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">TALE</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="contact_us">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer><!--/#footer-->
+        </div>
+    </footer><!--/#footer-->
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
