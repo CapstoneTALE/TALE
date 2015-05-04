@@ -7,16 +7,6 @@
     <meta name="author" content="">
     <title>Contact Us | Political Visions</title>
 
-	<!-- core CSS -->
-   <!--
- <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
- -->
-
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -112,17 +102,6 @@
       						)
   						);?>
   						</li>
-                          <!--<li><a href="services.html">Services</a></li>-->
-                          <!--<li><a href="portfolio.html">Portfolio</a></li>-->
-                          <!--<li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
-                              <ul class="dropdown-menu">
-                                  <li><a href="blog-item.html">Blog Single</a></li>
-                                  <li><a href="pricing.html">Pricing</a></li>
-                                  <li><a href="404.html">404</a></li>
-                                  <li><a href="shortcodes.html">Shortcodes</a></li>
-                              </ul>
-                          </li>-->
                           <li class="dropdown">
                           	<?php echo $this->Html->link(
                           		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
@@ -271,17 +250,6 @@
                         </div>
                     </div>
                 </form> 
-<!-- 
-=======
-                <?php echo $this->Form->create('Contact', array('action' => 'index')); ?>
-                <?php echo $this->Form->input('name'); ?>
-                <?php echo $this->Form->input('email'); ?>
-                <?php echo $this->Form->input('subject'); ?>
-                <?php echo $this->Form->input('message'); ?>
-                <?php echo $this->Form->submit(); ?>
-                <?php echo $this->Form->end(); ?>
->>>>>>> AD_Branch:public_html/cakephp/app/View/Pages/contact_us.ctp
- -->
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#contact-page-->
@@ -313,11 +281,6 @@
                             <li><a href="discussion">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!--
-                            <li><a href="#">Refund policy</a></li>
-                            <li><a href="#">Ticket system</a></li>
-                            <li><a href="#">Billing system</a></li>
- -->
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
@@ -329,13 +292,6 @@
                             <li><a href="#">Local Representatives</a></li>
                             <li><a href="contact_politician">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!--
- <li><a href="#">Development</a></li>
-                            <li><a href="#">Email Marketing</a></li>
-                            <li><a href="#">Plugin Development</a></li>
-                            <li><a href="#">Article Writing</a></li>
- -->
-
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->

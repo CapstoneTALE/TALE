@@ -9,17 +9,6 @@
     <meta name="author" content="">
     <title>Home | Political Visions</title>
 
-	<!-- core CSS -->
-    <!--
-echo $this->Html->css('bootstrap.min');
-    echo $this->Html->css('font-awesome.min');
-    echo $this->Html->css('animate.min');
-    echo $this->Html->css('prettyPhoto');
-    echo $this->Html->css('main');
-    echo $this->Html->css('responsive');
- -->
-
-
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -165,11 +154,13 @@ echo $this->Html->css('bootstrap.min');
 
     <section id="main-slider" class="no-margin">
         <div class="carousel slide">
-            <ol class="carousel-indicators">
+            <!-- 
+<ol class="carousel-indicators">
                 <li data-target="#main-slider" data-slide-to="0" class="active"></li>
                 <li data-target="#main-slider" data-slide-to="1"></li>
                 <li data-target="#main-slider" data-slide-to="2"></li>
             </ol>
+ -->
             <div class="carousel-inner">
 
              <div class="item active" style="background-image: url(<?php echo $this->webroot; ?>/app/webroot/img/slider/USFlag.jpg)">
@@ -203,13 +194,6 @@ echo $this->Html->css('bootstrap.min');
                                     <a class="btn-slide animation animated-item-3" href="#">Read More</a>
                                 </div>
                             </div>
-
-                            <!--<div class="col-sm-6 hidden-xs animation animated-item-4">
-                                <div class="slider-img">
-                                    <img src="images/slider/img1.png" class="img-responsive">
-                                </div>
-                            </div>-->
-
                         </div>
                     </div>
                 </div><!--/.item-->
@@ -234,17 +218,20 @@ echo $this->Html->css('bootstrap.min');
                 </div><!--/.item-->
             </div><!--/.carousel-inner-->
         </div><!--/.carousel-->
-        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+       <!-- 
+ <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
             <i class="fa fa-chevron-left"></i>
         </a>
         <a class="next hidden-xs" href="#main-slider" data-slide="next">
             <i class="fa fa-chevron-right"></i>
         </a>
+ -->
     </section><!--/#main-slider-->
 
     <section id="feature" >
         <div class="container">
            <div class="center wow fadeInDown">
+           		<br>
                 <h2>TALE</h2>
                 <p class="lead">Transitioning Awareness Lawfully Educating</p>
             </div>
@@ -306,6 +293,7 @@ echo $this->Html->css('bootstrap.min');
     <section id="recent-works">
         <div class="container">
             <div class="center wow fadeInDown">
+            	<br>
                 <h2>In The News</h2>
                 <p class="lead">Keep up to date with the national news! </p>
             </div>
@@ -362,149 +350,9 @@ echo $this->Html->css('bootstrap.min');
                         </div>
                     </div>
                 </div>
-
-                <!--
-<div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="images/portfolio/full/item5.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="images/portfolio/full/item6.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item7.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="images/portfolio/full/item7.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item8.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
- -->
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#recent-works-->
-
-    <!--
-<section id="services" class="service-item">
-	   <div class="container">
-            <div class="center wow fadeInDown">
-                <h2>Our Service</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
-
-            <div class="row">
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services1.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">SEO Marketing</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services2.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">SEO Marketing</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services3.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">SEO Marketing</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services4.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">SEO Marketing</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services5.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">SEO Marketing</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services6.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">SEO Marketing</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!~~/.row~~>
-        </div><!~~/.container~~>
-    </section><!~~/#services~~>
- -->
 
     <section id="middle">
         <div class="container">
@@ -791,11 +639,6 @@ echo $this->Html->css('bootstrap.min');
                             <li><a href="discussion">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!--
-                            <li><a href="#">Refund policy</a></li>
-                            <li><a href="#">Ticket system</a></li>
-                            <li><a href="#">Billing system</a></li>
- -->
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
@@ -807,13 +650,6 @@ echo $this->Html->css('bootstrap.min');
                             <li><a href="#">Local Representatives</a></li>
                             <li><a href="contact_politician">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!--
- <li><a href="#">Development</a></li>
-                            <li><a href="#">Email Marketing</a></li>
-                            <li><a href="#">Plugin Development</a></li>
-                            <li><a href="#">Article Writing</a></li>
- -->
-
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->

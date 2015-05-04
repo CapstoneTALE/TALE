@@ -6,17 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Calendar | Political Visions</title>
-
-	<!-- core CSS -->
-   <!--
- <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
- -->
-
+    
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -112,17 +102,6 @@
                 )
             );?>
             </li>
-                        <!--<li><a href="services.html">Services</a></li>-->
-                        <!--<li><a href="portfolio.html">Portfolio</a></li>-->
-                        <!--<li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-item.html">Blog Single</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="shortcodes.html">Shortcodes</a></li>
-                            </ul>
-                        </li>-->
                         <li class="dropdown">
                           <?php echo $this->Html->link(
                             //$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
@@ -186,6 +165,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
+                    	<br>
                         <h3>Company</h3>
                         <ul>
                             <li><a href="about">About us</a></li>
@@ -201,41 +181,32 @@
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
+                    	<br>
                         <h3>Support</h3>
                         <ul>
                             <li><a href="#">Faq</a></li>
                             <li><a href="discussion">Discussion</a></li>
                             <li><a href="#">Forum</a></li>
                             <li><a href="#">Documentation</a></li>
-<!--
-                            <li><a href="#">Refund policy</a></li>
-                            <li><a href="#">Ticket system</a></li>
-                            <li><a href="#">Billing system</a></li>
- -->
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
+                    	<br>
                         <h3>Politicians</h3>
                         <ul>
                             <li><a href="#">Local Representatives</a></li>
                             <li><a href="contact_politician">Contact Politician</a></li>
                             <li><a href="#">Recent News</a></li>
-                           <!--
- <li><a href="#">Development</a></li>
-                            <li><a href="#">Email Marketing</a></li>
-                            <li><a href="#">Plugin Development</a></li>
-                            <li><a href="#">Article Writing</a></li>
- -->
-
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
+                    	<br>
                         <h3>Our Partners and Supporters</h3>
                         <ul>
                             <li><a href="#">Adipisicing Elit</a></li>
