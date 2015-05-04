@@ -115,17 +115,6 @@ echo $this->Html->css('bootstrap.min');
     						)
 						);?>
 						</li>
-                        <!--<li><a href="services.html">Services</a></li>-->
-                        <!--<li><a href="portfolio.html">Portfolio</a></li>-->
-                        <!--<li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-item.html">Blog Single</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="shortcodes.html">Shortcodes</a></li>
-                            </ul>
-                        </li>-->
                         <li class="dropdown">
                         	<?php echo $this->Html->link(
                         		//$this->Html->tag('i', null, array('class' => 'fa fa-angle-down'));
@@ -306,7 +295,7 @@ echo $this->Html->css('bootstrap.min');
                         <div class="feature-wrap">
                             <i class="fa fa-heart"></i>
                             <h2>Press Releases</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                            <h3>See information regarding the latest press releases</h3>
                         </div>
                     </div><!--/.col-md-4-->
                 </div><!--/.services-->
@@ -552,17 +541,6 @@ echo $this->Html->css('bootstrap.min');
                               </div>
                             </div>
                         </div>
-
-                        <!--
-<div class="progress-wrap">
-                            <h3>Wordpress</h3>
-                            <div class="progress">
-                              <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                <span class="bar-width">90%</span>
-                              </div>
-                            </div>
-                        </div>
- -->
 
                     </div>
 
