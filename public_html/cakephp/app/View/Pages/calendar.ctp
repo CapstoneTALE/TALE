@@ -173,8 +173,9 @@
     <section id="about-us">
         <div class="container">
 			<div class="center wow fadeInDown">
+				<br>
 				<h2>Calendar</h2>
-				<p>Events Coming Soon!!</p>
+				<iframe src="https://www.dayhaps.com/en/widget-calendar-4244.html?lang=en" height='500' width='100%' border='0' style="border:none;"></iframe>
 			</div>
 
 		</div><!--/.container-->
