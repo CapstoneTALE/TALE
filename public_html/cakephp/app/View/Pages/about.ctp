@@ -377,6 +377,7 @@ This is the application that TALE intends to create. An application to not only 
                             <li><a href="http://www.columbiatribune.com/news/politics/">Columbia Daily Tribune</a></li>
                             <li><a href="https://www.columbiamissourian.com/stories/news/elections/">Columbia Missourian</a></li>
                             <li><a href="http://www.showmeboone.com/clerk/">Show Me Boone</a></li>
+                            <li><a href="http://www.komu.com/news/">KOMU</a></li>
                     </div>
                 </div><!--/.col-md-3-->
             </div>
