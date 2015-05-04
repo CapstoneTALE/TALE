@@ -170,7 +170,7 @@
                                 <div class="carousel-content">
                                     <h1 class="animation animated-item-1">"Be The Change You Want To See"</h1>
                                     <h2 class="animation animated-item-2">No change can be achieved without a spark</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                    <a class="btn-slide animation animated-item-3" href="bills">Read More</a>
                                 </div>
                             </div>
 
@@ -406,11 +406,11 @@
 
             <div class="partners">
                 <ul>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/partner1.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/partner2.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/partner3.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/partner4.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/partner5.png"></a></li>
+                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/citylogo2_copy.png"></a></li>
+                    <li> <a href="#"><img height="200" width="200" class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/columbia_tribune_copy.png"></a></li>
+                    <li> <a href="#"><img height="200" width="200"class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/ColumbiaMissourian_copy.png"></a></li>
+                    <li> <a href="#"><img height="200" width="300" class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/ShowMeBoone_copy.png"></a></li>
+                    <li> <a href="#"><img height="200" width="175" class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="<?php echo $this->webroot; ?>/app/webroot/img/partners/komu_copy.png"></a></li>
                 </ul>
             </div>
         </div><!--/.container-->
@@ -465,6 +465,7 @@
                             <li><a href="http://www.columbiatribune.com/news/politics/">Columbia Daily Tribune</a></li>
                             <li><a href="https://www.columbiamissourian.com/stories/news/elections/">Columbia Missourian</a></li>
                             <li><a href="http://www.showmeboone.com/clerk/">Show Me Boone</a></li>
+                            <li><a href="http://www.komu.com/news/">KOMU</a></li>
                     </div>
                 </div><!--/.col-md-3-->
             </div>
