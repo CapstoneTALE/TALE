@@ -151,6 +151,7 @@
     </header><!--/header-->
 
     <section id="contact-info">
+    <br>
         <div class="center">
             <h2>How to Reach Us?</h2>
             <p class="lead">Visit one of our office locations or just simply fill out the form below!</p>
@@ -210,6 +211,7 @@
     </section>  <!--/gmap_area -->
 
     <section id="contact-page">
+    <br>
         <div class="container">
             <div class="center">
                 <h2>Drop Your Message</h2>
